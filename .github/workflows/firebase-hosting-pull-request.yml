@@ -6,10 +6,29 @@ name: Deploy to Firebase Hosting on PR
 jobs:
   build_and_preview:
     runs-on: ubuntu-latest
+    env:
+      ruby-version: 2.5
+
     steps:
-      - run: bundle exec middleman build
       - uses: actions/checkout@v2
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ env.ruby-version }}
+
+      - name: Build
+        uses: actions/cache@v1
+        with:
+          path: vendor/bundle
+          key: gems-${{ runner.os }}-${{ env.ruby-version }}-${{ hashFiles('**/Gemfile.lock') }}
+
+      - run: bundle config set deployment 'true'
+      - run: bundle install
+      - run: bundle exec middleman build
+
+      - name: Deploy to Firebase
+        if: steps.build.outputs.conclusion == 'success'
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ADMX_SLAY }}'
