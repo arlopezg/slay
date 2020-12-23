@@ -1,0 +1,42 @@
+name: S3 Deploy
+
+on:
+  push:
+    branches: [ 'master' ]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    steps:
+        - uses: actions/checkout@v2
+        - name: Build
+          uses: ruby/setup-ruby@v1
+          with:
+            ruby-version: ${{ matrix.ruby-version }}
+
+        - uses: actions/cache@v1
+          with:
+            path: vendor/bundle
+            key: gems-${{ runner.os }}-${{ matrix.ruby-version }}-${{ hashFiles('**/Gemfile.lock') }}
+
+        # necessary to get ruby 2.3 to work nicely with bundler vendor/bundle cache
+        # can remove once ruby 2.3 is no longer supported
+        - run: gem update --system
+        - run: bundle config set deployment 'true'
+        - run: bundle install
+        - run: bundle exec middleman build
+
+        - name: Deploy
+          uses: reggionick/s3-deploy@v3
+          with:
+            folder: build
+            bucket: ${{ secrets.S3_BUCKET }}
+            bucket-region: ${{ secrets.S3_BUCKET_REGION }}
+            dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+            invalidation: /
+            delete-removed: true
+            no-cache: true
+            private: true
