@@ -51,3 +51,360 @@ $response = Requests::post('https://clientela.admetricks.com/opportunity-brand-r
 ```
 
 > Respuesta (200)
+
+```json
+{
+  "meta": {
+    "date_range": {
+      "start": "2020-12-29T03:02:49.000Z",
+      "end": "2020-12-29T03:02:49.000Z"
+    }
+  },
+  "data": {
+    "industries": [
+      {
+        "metrics": {
+          "impact": 15213,
+          "count": 1,
+          "valuation_usd": 68.54452837288451,
+          "valuation_by_country": [
+            {
+              "chile": 47700
+            }
+          ],
+          "impressions": 62093,
+          "valuation": 47700
+        },
+        "id": 288,
+        "name": "telecomunicaciones e internet - empresas de telecomunicaciones"
+      }
+    ],
+    "date_range": {
+      "start": "2020-12-29T03:02:49.000Z",
+      "end": "2020-12-29T03:02:49.000Z"
+    },
+    "ad_types": [
+      {
+        "metrics": {
+          "impact": 15213,
+          "count": 1,
+          "valuation_usd": 68.54452837288451,
+          "valuation_by_country": [
+            {
+              "chile": 47700
+            }
+          ],
+          "impressions": 62093,
+          "valuation": 47700
+        },
+        "id": 1,
+        "name": "display"
+      }
+    ],
+    "countries": [
+      {
+        "metrics": {
+          "impact": 15213,
+          "count": 1,
+          "valuation_usd": 68.54452837288451,
+          "valuation_by_country": [
+            {
+              "chile": 47700
+            }
+          ],
+          "impressions": 62093,
+          "valuation": 47700
+        },
+        "id": 1,
+        "name": "chile"
+      }
+    ],
+    "sold_by": [
+      {
+        "metrics": {
+          "impact": 15213,
+          "count": 1,
+          "valuation_usd": 68.54452837288451,
+          "valuation_by_country": [
+            {
+              "chile": 47700
+            }
+          ],
+          "impressions": 62093,
+          "valuation": 47700
+        },
+        "id": "google",
+        "name": "google"
+      }
+    ],
+    "devices": [
+      {
+        "metrics": {
+          "impact": 15213,
+          "count": 1,
+          "valuation_usd": 68.54452837288451,
+          "valuation_by_country": [
+            {
+              "chile": 47700
+            }
+          ],
+          "impressions": 62093,
+          "valuation": 47700
+        },
+        "id": 2,
+        "name": "mobile"
+      }
+    ],
+    "summary": {
+      "metrics_by_date": [
+        {
+          "date": "2020-12-29T00:00:00.000Z",
+          "metrics": {
+            "impact": 15213,
+            "valuation_usd": 68.54452837288451,
+            "impressions": 62093,
+            "valuation": 47700
+          },
+          "date_int": 1609200000000
+        }
+      ],
+      "ad_types": [
+        {
+          "metrics": {
+            "impact": 15213,
+            "valuation_usd": 68.54452837288451,
+            "impressions": 62093,
+            "valuation": 47700
+          },
+          "id": 1,
+          "name": "display"
+        }
+      ],
+      "countries": [
+        {
+          "metrics": {
+            "impact": 15213,
+            "valuation_usd": 68.54452837288451,
+            "impressions": 62093,
+            "valuation": 47700
+          },
+          "id": 1,
+          "name": "chile"
+        }
+      ],
+      "total_impressions": 62093,
+      "total_impact": 15213,
+      "devices": [
+        {
+          "metrics": {
+            "impact": 15213,
+            "valuation_usd": 68.54452837288451,
+            "impressions": 62093,
+            "valuation": 47700
+          },
+          "id": 2,
+          "name": "mobile"
+        }
+      ],
+      "total_valuation_usd": 68.54452837288451,
+      "position": {
+        "first_scroll": 0,
+        "second_scroll": 0,
+        "third_or_more_scroll": 1
+      },
+      "total_valuation": 47700
+    },
+    "campaigns": [
+      {
+        "landing_page": "clarochile.cl/personas/todos-bienvenidos",
+        "description": "captura pantalla | colorido | cuadrado | línea | número | paralelo | rectángulo",
+        "title": "Todos Bienvenidos | Claro Chile",
+        "date_range": {
+          "start": "2020-12-29T03:02:49.000Z",
+          "end": "2020-12-29T03:02:49.000Z"
+        },
+        "industry": {
+          "id": 288,
+          "name": "telecomunicaciones e internet - empresas de telecomunicaciones"
+        },
+        "brand": {
+          "id": 3,
+          "name": "claro"
+        },
+        "countries": [
+          {
+            "metrics": {
+              "impact": 15213,
+              "count": 1,
+              "valuation_usd": 68.54452837288451,
+              "valuation_by_country": [
+                {
+                  "chile": 47700
+                }
+              ],
+              "impressions": 62093,
+              "valuation": 47700
+            },
+            "id": 1,
+            "name": "chile"
+          }
+        ],
+        "devices": [
+          {
+            "metrics": {
+              "impact": 15213,
+              "count": 1,
+              "valuation_usd": 68.54452837288451,
+              "valuation_by_country": [
+                {
+                  "chile": 47700
+                }
+              ],
+              "impressions": 62093,
+              "valuation": 47700
+            },
+            "id": 2,
+            "name": "mobile"
+          }
+        ],
+        "metrics": {
+          "impact": 15213,
+          "count": 1,
+          "valuation_usd": 68.54452837288451,
+          "valuation_by_country": [
+            {
+              "chile": 47700
+            }
+          ],
+          "impressions": 62093,
+          "valuation": 47700
+        },
+        "websites": [
+          {
+            "metrics": {
+              "impact": 15213,
+              "count": 1,
+              "valuation_usd": 68.54452837288451,
+              "valuation_by_country": [
+                {
+                  "chile": 47700
+                }
+              ],
+              "impressions": 62093,
+              "valuation": 47700
+            },
+            "domain": "20minutos.es",
+            "id": 1350
+          }
+        ],
+        "sold_by": [
+          {
+            "metrics": {
+              "impact": 15213,
+              "count": 1,
+              "valuation_usd": 68.54452837288451,
+              "valuation_by_country": [
+                {
+                  "chile": 47700
+                }
+              ],
+              "impressions": 62093,
+              "valuation": 47700
+            },
+            "id": "google",
+            "name": "google"
+          }
+        ],
+        "preview": {
+          "ad_measurements": {
+            "width": 336,
+            "height": 280
+          },
+          "ad_file": {
+            "name": "https://ads.admetricks.com/banner_64f743f73597d32265713f5cce72ce7d.jpg"
+          }
+        },
+        "id": 7847163,
+        "ad_types": [
+          {
+            "metrics": {
+              "impact": 15213,
+              "count": 1,
+              "valuation_usd": 68.54452837288451,
+              "valuation_by_country": [
+                {
+                  "chile": 47700
+                }
+              ],
+              "impressions": 62093,
+              "valuation": 47700
+            },
+            "id": 1,
+            "name": "display"
+          }
+        ]
+      }
+    ],
+    "websites": [
+      {
+        "metrics": {
+          "impact": 15213,
+          "count": 1,
+          "valuation_usd": 68.54452837288451,
+          "valuation_by_country": [
+            {
+              "chile": 47700
+            }
+          ],
+          "impressions": 62093,
+          "valuation": 47700
+        },
+        "domain": "20minutos.es",
+        "id": 1350
+      }
+    ],
+    "brands_by_date": [
+      {
+        "metrics_by_date": [
+          {
+            "date": "2020-12-29T00:00:00.000Z",
+            "metrics": {
+              "impact": 15213,
+              "count": 1,
+              "valuation_usd": 68.54452837288451,
+              "valuation_by_country": [
+                {
+                  "chile": 47700
+                }
+              ],
+              "impressions": 62093,
+              "valuation": 47700
+            },
+            "date_int": 1609200000000
+          }
+        ],
+        "id": 3,
+        "name": "claro"
+      }
+    ],
+    "brands": [
+      {
+        "metrics": {
+          "impact": 15213,
+          "count": 1,
+          "valuation_usd": 68.54452837288451,
+          "valuation_by_country": [
+            {
+              "chile": 47700
+            }
+          ],
+          "impressions": 62093,
+          "valuation": 47700
+        },
+        "id": 3,
+        "name": "claro"
+      }
+    ]
+  }
+}
+```
