@@ -1,6 +1,6 @@
-name: Deploy to S3
+name: Deploy to S3 (Stage)
 
-on: push
+on: pull_request
 
 jobs:
   build:
@@ -17,11 +17,13 @@ jobs:
         ruby-version: ${{ matrix.ruby-version }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Generate static site
+      run: bundle exec middleman build --clean
+    - name: Save artifact
       uses: actions/upload-artifact@v2
       with:
         name: build
-        path: build/
-      run: bundle exec middleman server
+        path: ./build/
+        if-no-files-found: error
 
   upload:
     needs: build
@@ -31,9 +33,13 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: build
-      - uses: shallwefootball/s3-upload-action@master
+      - name: Deploy
+        uses: shallwefootball/s3-upload-action@master
         with:
-          aws_key_id: ${{ secrets.AWS_KEY_ID }}
+          aws_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
-          aws_bucket: ${{ secrets.AWS_BUCKET }}
-          source_dir: "build"
+          aws_bucket: ${{ secrets.AWS_BUCKET_STAGE }}
+          source_dir: "."
+          destination_dir: "docs"
+      - name: Success
+        run: echo "Deployed to stage(dot)admetricks(dot)com/docs"
