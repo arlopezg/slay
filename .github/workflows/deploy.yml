@@ -17,12 +17,20 @@ jobs:
         ruby-version: ${{ matrix.ruby-version }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Generate static site
+      uses: actions/upload-artifact@v2
+      with:
+        name: build
+        path: build/
       run: bundle exec middleman server
 
   upload:
+    needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - name: Retrieve built project
+        uses: actions/download-artifact@v2
+        with:
+          name: build
       - uses: shallwefootball/s3-upload-action@master
         with:
           aws_key_id: ${{ secrets.AWS_KEY_ID }}
