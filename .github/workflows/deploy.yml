@@ -1,34 +1,31 @@
-name: Deploy
+name: Deploy to S3
 
-on:
-  push:
-    branches: [ 'main' ]
+on: push
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    env:
-      ruby-version: 2.5
+    strategy:
+      matrix:
+        ruby-version: ['2.6']
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
+    - name: Save gems to cache
+      uses: ruby/setup-ruby@473e4d8fe5dd94ee328fdfca9f8c9c7afc9dae5e
       with:
-        ruby-version: ${{ env.ruby-version }}
+        ruby-version: ${{ matrix.ruby-version }}
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+    - name: Generate static site
+      run: bundle exec middleman server
 
-    - uses: actions/cache@v1
-      with:
-        path: vendor/bundle
-        key: gems-${{ runner.os }}-${{ env.ruby-version }}-${{ hashFiles('**/Gemfile.lock') }}
-
-    - run: bundle config set deployment 'true'
-    - run: bundle install
-
-    - run: bundle exec middleman build
-
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: shallwefootball/s3-upload-action@master
+        with:
+          aws_key_id: ${{ secrets.AWS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+          aws_bucket: ${{ secrets.AWS_BUCKET }}
+          source_dir: "build"
