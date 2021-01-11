@@ -1,9 +1,10 @@
 name: Deploy to S3 (Production)
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -40,8 +41,10 @@ jobs:
         with:
           aws_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
-          aws_bucket: ${{ secrets.AWS_BUCKET_STAGE }}
+          aws_bucket: ${{ secrets.AWS_BUCKET_PROD }}
           source_dir: "."
-          destination_dir: "docs"
+          destination_dir: ''
       - name: Success
-        run: echo "Deployed to web(dot)admetricks(dot)com/docs"
+        run: |
+          BUCKET=${{ secrets.AWS_BUCKET_PROD}}
+          echo "Deployed to ${BUCKET//./(dot)}"
