@@ -23,26 +23,9 @@ Entrega una lista de los reportes asociados a tu usuario.
 
 **Respuestas**
 
-Status Code **200**
-
 |Nombre|Tipo|Requerido|Restricciones|Descripción|
 |---|---|---|---|---|
-|*anonymous*|[[Report](#schemareport)]|false|none|none|
-|» id|integer|true|read-only|none|
-|» name|string|true|none|none|
-|» query|string|true|none|none|
-|» filter|string|false|none|none|
-|» period|integer|false|none|none|
-|» daily_updates|boolean|false|none|none|
-|» weekly_updates|boolean|false|none|none|
-|» monthly_updates|boolean|false|none|none|
-|» monthly_memories|boolean|false|none|none|
-|» last_delivered_date|string(date-time)¦null|false|none|none|
-|» last_delivered_status|string¦null|false|none|none|
-|» weekly_updates_delivery_day|[WeeklyUpdatesDeliveryDayEnum](#schemaweeklyupdatesdeliverydayenum)|false|none|none|
-|» report_type|[Nested](#schemanested)|true|read-only|none|
-|»» id|integer|true|read-only|none|
-|»» name|string|true|none|none|
+|Reportes|[[Report](#schemareport)]|true|none|Reportes encontrados|
 
 <aside class="warning">
   Para realizar esta operación es obligatorio utilizar tu <strong><a href="#configura-tu-token">token de acceso</a></strong>
@@ -77,6 +60,10 @@ Permite suscribirse a un reporte en específico y obtener actualizaciones por co
 
 **Respuestas**
 
+|Nombre|Tipo|Requerido|Restricciones|Descripción|
+|---|---|---|---|---|
+|Reporte|[Report](#schemareport)|true|none|Información del reporte|
+
 <aside class="warning">
   Para realizar esta operación es obligatorio utilizar tu <strong><a href="#configura-tu-token">token de acceso</a></strong>
 </aside>
@@ -109,6 +96,10 @@ Entrega uno de tus reportes.
 
 
 **Respuestas**
+
+|Nombre|Tipo|Requerido|Restricciones|Descripción|
+|---|---|---|---|---|
+|Reporte|[Report](#schemareport)|true|none|Información del reporte|
 
 <aside class="warning">
   Para realizar esta operación es obligatorio utilizar tu <strong><a href="#configura-tu-token">token de acceso</a></strong>
