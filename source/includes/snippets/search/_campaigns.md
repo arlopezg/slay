@@ -79,6 +79,7 @@ $response = Requests::post('https://clientela.admetricks.com/campaigns/', $heade
 ```
 
 > Ejemplo de respuesta (200)
+
 ```json
 {
   "meta": {},
