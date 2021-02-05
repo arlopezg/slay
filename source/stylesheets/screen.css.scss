@@ -34,6 +34,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   @extend %default-font;
   background-color: $main-bg;
+  color: #c1c9d2;
   height: 100%;
   -webkit-text-size-adjust: none; /* Never autoresize text */
   * {
@@ -74,7 +75,7 @@ span.tag {
   left: 0;
   bottom: 0;
   width: $nav-width;
-  background-color: $nav-bg;
+  background-color: $main-bg;
   font-size: 13px;
   font-weight: bold;
 
@@ -99,7 +100,7 @@ span.tag {
     position: relative;
 
     input {
-      background: $nav-bg;
+      background: $main-bg;
       border-width: 0 0 1px 0;
       border-color: $search-box-border-color;
       padding: 6px 0 6px 20px;
@@ -181,7 +182,6 @@ span.tag {
   }
 
   .toc-list-h2 {
-    display: none;
     background-color: $nav-subitem-bg;
     font-weight: 500;
   }
@@ -201,7 +201,6 @@ span.tag {
   }
 
   .toc-list-h4 {
-    display: none;
     background-color: $nav-subitem-bg;
   }
 
@@ -219,6 +218,7 @@ span.tag {
     a {
       color: $nav-text;
       text-decoration: none;
+      background: $main-bg;
     }
 
     a:hover {
@@ -374,6 +374,13 @@ section {
     clear: both;
   }
 
+  p {
+    > a {
+      color: white;
+      font-weight: bold;
+    }
+  }
+
   & > h1,
   & > h2,
   & > h3,
@@ -415,9 +422,9 @@ section {
     padding-bottom: 0.5em;
     margin-bottom: $h1-margin-bottom;
     margin-top: 2em;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    background-color: #fdfdfd;
+    border-top: 1px solid $code-bg;
+    border-bottom: 1px solid $code-bg;
+    background-color: $main-bg;
   }
 
   h1:first-child,
@@ -431,14 +438,9 @@ section {
     font-size: 19px;
     margin-top: 1em;
     margin-bottom: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $code-bg;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(#fff, 0.2),
-      rgba(#fff, 0)
-    );
   }
 
   // h2s right after h1s should bump right up
@@ -551,6 +553,11 @@ section {
     margin-bottom: 1.5em;
     background: $aside-notice-bg;
     line-height: 1.6;
+
+    ::-webkit-scrollbar {
+      width: 0; /* Remove scrollbar space */
+      background: transparent; /* Optional: just make scrollbar invisible */
+    }
 
     &.warning {
       background-color: $aside-warning-bg;
