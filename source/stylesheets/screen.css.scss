@@ -43,6 +43,11 @@ body {
   a {
     text-decoration: none;
   }
+  p > a {
+    &:visited {
+      color: #e4f1fe;
+    }
+  }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -56,17 +61,7 @@ body {
   width: 20px;
 }
 
-span.tag {
-  background: blue;
-  color: white;
-  border-radius: 4px;
-  padding: 5px 10px;
-  text-align: center;
-}
-
 .toc-wrapper {
-  transition: left 0.3s ease-in-out;
-
   overflow-y: auto;
   overflow-x: hidden;
   position: fixed;
@@ -164,9 +159,6 @@ span.tag {
 
   li {
     color: $nav-text;
-    transition-property: background;
-    transition-timing-function: linear;
-    transition-duration: 200ms;
   }
 
   // This is the currently selected ToC entry
@@ -181,8 +173,12 @@ span.tag {
     color: $nav-active-parent-text;
   }
 
+  ul[class^="toc-list"] {
+    display: block !important;
+  }
+
   .toc-list-h2 {
-    background-color: $nav-subitem-bg;
+    // background-color: $nav-subitem-bg;
     font-weight: 500;
   }
 
@@ -192,7 +188,7 @@ span.tag {
   }
 
   .toc-list-h3 {
-    background-color: $nav-subitem-bg;
+    // background-color: $nav-subitem-bg;
   }
 
   .toc-h3 {
@@ -242,9 +238,6 @@ span.tag {
   text-overflow: ellipsis;
   text-decoration: none;
   color: $nav-text;
-  transition-property: background;
-  transition-timing-function: linear;
-  transition-duration: 130ms;
 }
 
 // button to show navigation on mobile devices
@@ -289,7 +282,7 @@ span.tag {
 ////////////////////////////////////////////////////////////////////////////////
 
 section {
-  max-width: 600px;
+  max-width: 550px;
   padding: 0 2em;
 }
 
@@ -367,6 +360,10 @@ section {
   // to place content above the dark box
   position: relative;
   z-index: 30;
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 20px;
+  }
 
   &:after {
     content: "";
@@ -374,10 +371,13 @@ section {
     clear: both;
   }
 
-  p {
-    > a {
-      color: white;
+  p, aside {
+    a {
+      color: #89c4f4;
       font-weight: bold;
+      &:visited {
+        color: darken(#89c4f4, 3%);
+      }
     }
   }
 
@@ -417,14 +417,14 @@ section {
 
   h1 {
     @extend %header-font;
+    border-top: 1px solid #666;
     font-size: 25px;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
     margin-bottom: $h1-margin-bottom;
+    margin-left: -1em;
     margin-top: 2em;
-    border-top: 1px solid $code-bg;
-    border-bottom: 1px solid $code-bg;
-    background-color: $main-bg;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    width: 100%;
   }
 
   h1:first-child,
@@ -438,7 +438,7 @@ section {
     font-size: 19px;
     margin-top: 1em;
     margin-bottom: 0;
-    border-top: 1px solid $code-bg;
+    border-top: 1px solid darken(#666, 2%);
     padding-top: 1.2em;
     padding-bottom: 1.2em;
   }
@@ -456,9 +456,10 @@ section {
   h5,
   h6 {
     @extend %header-font;
-    font-size: 15px;
+    font-size: 18px;
     margin-top: 2.5em;
     margin-bottom: 0.8em;
+    padding: 0;
   }
 
   h4,
@@ -483,6 +484,7 @@ section {
       line-height: 1.6;
       code {
         white-space: nowrap;
+        background: $code-annotation-bg;
       }
     }
 
@@ -530,8 +532,8 @@ section {
   }
 
   code {
-    background-color: rgba(0, 0, 0, 0.05);
-    padding: 3px;
+    background-color: rgba($code-bg, 0.5);
+    padding: 5px;
     border-radius: 3px;
     @extend %break-words;
     @extend %code-font;
@@ -553,6 +555,8 @@ section {
     margin-bottom: 1.5em;
     background: $aside-notice-bg;
     line-height: 1.6;
+    width: 100%;
+    max-width: 550px;
 
     ::-webkit-scrollbar {
       width: 0; /* Remove scrollbar space */
@@ -606,7 +610,9 @@ section {
   }
 
   .highlight {
+    @include rounded-bottom;
     white-space: break-spaces;
+    margin-bottom: 10px;
   }
 
   pre,
@@ -626,6 +632,7 @@ section {
 
     & > p {
       margin: 0;
+      background: lighten($color: $code-bg, $amount: 3%)
     }
 
     a {
@@ -640,11 +647,12 @@ section {
     padding-top: 2em;
     padding-bottom: 2em;
     padding: 2em $main-padding;
+    margin-bottom: 10px;
   }
 
   blockquote {
+    @include rounded-top;
     & > p {
-      background-color: $code-annotation-bg;
       padding: $code-annotation-padding 2em;
       color: #eee;
     }
