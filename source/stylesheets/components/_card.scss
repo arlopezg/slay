@@ -1,3 +1,5 @@
+@import "../variables";
+
 .card {
   background: darken($code-bg, $amount: 3%);
   border-radius: 4px;
