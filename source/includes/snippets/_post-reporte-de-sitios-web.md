@@ -56,23 +56,27 @@ $response = Requests::post('https://clientel.admetricks.com/website-report/', $h
 {
   "meta": {
     "date_range": {
-      "start": "2021-01-07T03:21:38.000Z",
-      "end": "2021-01-07T03:21:38.000Z"
+      "start": "2021-01-01T00:00:01.000Z",
+      "end": "2021-01-07T00:00:01.000Z"
     }
   },
   "data": {
     "industries": [
       {
         "metrics": {
-          "impact": 39966,
-          "count": 2,
-          "valuation_usd": 150.15338660829642,
-          "valuation_by_country": [{ "chile": 107327 }],
-          "impressions": 120366,
-          "valuation": 107327
+          "impact": 72798,
+          "count": 3,
+          "valuation_usd": 456.3619250685288,
+          "valuation_by_country": [
+            {
+              "chile": 330636
+            }
+          ],
+          "impressions": 372718,
+          "valuation": 330636
         },
-        "id": 214,
-        "name": "tiendas y restaurantes - tiendas de productos al por menor"
+        "id": 13,
+        "name": "otros"
       }
     ],
     "websites_by_date": [
@@ -80,16 +84,52 @@ $response = Requests::post('https://clientel.admetricks.com/website-report/', $h
         "domain": "20minutos.es",
         "metrics_by_date": [
           {
-            "date": "2021-01-07T00:00:00.000Z",
+            "date": "2021-01-01T00:00:00.000Z",
             "metrics": {
-              "impact": 39966,
-              "count": 2,
-              "valuation_usd": 150.15338660829642,
-              "valuation_by_country": [{ "chile": 107327 }],
-              "impressions": 120366,
-              "valuation": 107327
+              "impact": 24338,
+              "count": 1,
+              "valuation_usd": 152.57198500813615,
+              "valuation_by_country": [
+                {
+                  "chile": 110539
+                }
+              ],
+              "impressions": 124608,
+              "valuation": 110539
             },
-            "date_int": 1609977600000
+            "date_int": 1609459200000
+          },
+          {
+            "date": "2021-01-02T00:00:00.000Z",
+            "metrics": {
+              "impact": 23276,
+              "count": 1,
+              "valuation_usd": 145.91363586729673,
+              "valuation_by_country": [
+                {
+                  "chile": 105715
+                }
+              ],
+              "impressions": 119170,
+              "valuation": 105715
+            },
+            "date_int": 1609545600000
+          },
+          {
+            "date": "2021-01-03T00:00:00.000Z",
+            "metrics": {
+              "impact": 25184,
+              "count": 1,
+              "valuation_usd": 157.87630419309593,
+              "valuation_by_country": [
+                {
+                  "chile": 114382
+                }
+              ],
+              "impressions": 128940,
+              "valuation": 114382
+            },
+            "date_int": 1609632000000
           }
         ],
         "id": 1350
@@ -98,12 +138,16 @@ $response = Requests::post('https://clientel.admetricks.com/website-report/', $h
     "ad_types": [
       {
         "metrics": {
-          "impact": 39966,
-          "count": 2,
-          "valuation_usd": 150.15338660829642,
-          "valuation_by_country": [{ "chile": 107327 }],
-          "impressions": 120366,
-          "valuation": 107327
+          "impact": 72798,
+          "count": 3,
+          "valuation_usd": 456.3619250685288,
+          "valuation_by_country": [
+            {
+              "chile": 330636
+            }
+          ],
+          "impressions": 372718,
+          "valuation": 330636
         },
         "id": 1,
         "name": "display"
@@ -112,132 +156,109 @@ $response = Requests::post('https://clientel.admetricks.com/website-report/', $h
     "countries": [
       {
         "metrics": {
-          "impact": 39966,
-          "count": 2,
-          "valuation_usd": 150.15338660829642,
-          "valuation_by_country": [{ "chile": 107327 }],
-          "impressions": 120366,
-          "valuation": 107327
+          "impact": 72798,
+          "count": 3,
+          "valuation_usd": 456.3619250685288,
+          "valuation_by_country": [
+            {
+              "chile": 330636
+            }
+          ],
+          "impressions": 372718,
+          "valuation": 330636
         },
         "id": 1,
         "name": "chile"
       }
     ],
-    "date_range": {
-      "start": "2021-01-07T03:21:38.000Z",
-      "end": "2021-01-07T03:21:38.000Z"
-    },
+    "website_categories": [
+      {
+        "metrics": {
+          "impact": 72798,
+          "count": 3,
+          "valuation_usd": 456.3619250685288,
+          "valuation_by_country": [
+            {
+              "chile": 330636
+            }
+          ],
+          "impressions": 372718,
+          "valuation": 330636
+        },
+        "id": "unknown",
+        "name": "unknown"
+      }
+    ],
     "sold_by": [
       {
         "metrics": {
-          "impact": 39966,
-          "count": 2,
-          "valuation_usd": 150.15338660829642,
-          "valuation_by_country": [{ "chile": 107327 }],
-          "impressions": 120366,
-          "valuation": 107327
+          "impact": 72798,
+          "count": 3,
+          "valuation_usd": 456.3619250685288,
+          "valuation_by_country": [
+            {
+              "chile": 330636
+            }
+          ],
+          "impressions": 372718,
+          "valuation": 330636
         },
-        "id": "google",
-        "name": "google"
+        "id": "not available",
+        "name": "not available"
       }
     ],
     "devices": [
       {
         "metrics": {
-          "impact": 39966,
-          "count": 2,
-          "valuation_usd": 150.15338660829642,
-          "valuation_by_country": [{ "chile": 107327 }],
-          "impressions": 120366,
-          "valuation": 107327
+          "impact": 72798,
+          "count": 3,
+          "valuation_usd": 456.3619250685288,
+          "valuation_by_country": [
+            {
+              "chile": 330636
+            }
+          ],
+          "impressions": 372718,
+          "valuation": 330636
         },
         "id": 2,
         "name": "mobile"
       }
     ],
-    "summary": {
-      "metrics_by_date": [
-        {
-          "date": "2021-01-07T00:00:00.000Z",
-          "metrics": {
-            "impact": 39966,
-            "valuation_usd": 150.15338660829642,
-            "impressions": 120366,
-            "valuation": 107327
-          },
-          "date_int": 1609977600000
-        }
-      ],
-      "ad_types": [
-        {
-          "metrics": {
-            "impact": 39966,
-            "valuation_usd": 150.15338660829642,
-            "impressions": 120366,
-            "valuation": 107327
-          },
-          "id": 1,
-          "name": "display"
-        }
-      ],
-      "countries": [
-        {
-          "metrics": {
-            "impact": 39966,
-            "valuation_usd": 150.15338660829642,
-            "impressions": 120366,
-            "valuation": 107327
-          },
-          "id": 1,
-          "name": "chile"
-        }
-      ],
-      "total_impressions": 120366,
-      "total_impact": 39966,
-      "devices": [
-        {
-          "metrics": {
-            "impact": 39966,
-            "valuation_usd": 150.15338660829642,
-            "impressions": 120366,
-            "valuation": 107327
-          },
-          "id": 2,
-          "name": "mobile"
-        }
-      ],
-      "total_valuation_usd": 150.15338660829642,
-      "position": {
-        "first_scroll": 0.0,
-        "second_scroll": 0.0,
-        "third_or_more_scroll": 1.0
-      },
-      "total_valuation": 107327
+    "date_range": {
+      "start": "2021-01-01T00:00:01.000Z",
+      "end": "2021-01-03T00:00:01.000Z"
     },
     "campaigns": [
       {
-        "landing_page": "falabella.com/falabella-cl/collection/liquidacion-mango-man",
-        "description": "blanco | colorido | fotografía | línea | magenta | patrón | rojo | rosado",
-        "ad_format": { "id": 154, "name": "brand-day" },
-        "title": " Liquidacion Mango Man - Falabella.com ",
+        "landing_page": "docs.admetricks.com/other-campaigns",
+        "description": null,
+        "title": "Other campaigns",
         "date_range": {
-          "start": "2021-01-07T03:21:38.000Z",
-          "end": "2021-01-07T03:21:38.000Z"
+          "start": "2021-01-01T00:00:01.000Z",
+          "end": "2021-01-03T00:00:01.000Z"
         },
         "industry": {
-          "id": 214,
-          "name": "tiendas y restaurantes - tiendas de productos al por menor"
+          "id": 13,
+          "name": "otros"
         },
-        "brand": { "id": 9077, "name": "falabella" },
+        "brand": {
+          "id": 186036,
+          "name": "other-brand"
+        },
         "countries": [
           {
             "metrics": {
-              "impact": 39966,
-              "count": 2,
-              "valuation_usd": 150.15338660829642,
-              "valuation_by_country": [{ "chile": 107327 }],
-              "impressions": 120366,
-              "valuation": 107327
+              "impact": 72798,
+              "count": 3,
+              "valuation_usd": 456.3619250685288,
+              "valuation_by_country": [
+                {
+                  "chile": 330636
+                }
+              ],
+              "impressions": 372718,
+              "valuation": 330636
             },
             "id": 1,
             "name": "chile"
@@ -246,34 +267,46 @@ $response = Requests::post('https://clientel.admetricks.com/website-report/', $h
         "devices": [
           {
             "metrics": {
-              "impact": 39966,
-              "count": 2,
-              "valuation_usd": 150.15338660829642,
-              "valuation_by_country": [{ "chile": 107327 }],
-              "impressions": 120366,
-              "valuation": 107327
+              "impact": 72798,
+              "count": 3,
+              "valuation_usd": 456.3619250685288,
+              "valuation_by_country": [
+                {
+                  "chile": 330636
+                }
+              ],
+              "impressions": 372718,
+              "valuation": 330636
             },
             "id": 2,
             "name": "mobile"
           }
         ],
         "metrics": {
-          "impact": 39966,
-          "count": 2,
-          "valuation_usd": 150.15338660829642,
-          "valuation_by_country": [{ "chile": 107327 }],
-          "impressions": 120366,
-          "valuation": 107327
+          "impact": 72798,
+          "count": 3,
+          "valuation_usd": 456.3619250685288,
+          "valuation_by_country": [
+            {
+              "chile": 330636
+            }
+          ],
+          "impressions": 372718,
+          "valuation": 330636
         },
         "websites": [
           {
             "metrics": {
-              "impact": 39966,
-              "count": 2,
-              "valuation_usd": 150.15338660829642,
-              "valuation_by_country": [{ "chile": 107327 }],
-              "impressions": 120366,
-              "valuation": 107327
+              "impact": 72798,
+              "count": 3,
+              "valuation_usd": 456.3619250685288,
+              "valuation_by_country": [
+                {
+                  "chile": 330636
+                }
+              ],
+              "impressions": 372718,
+              "valuation": 330636
             },
             "domain": "20minutos.es",
             "id": 1350
@@ -282,33 +315,44 @@ $response = Requests::post('https://clientel.admetricks.com/website-report/', $h
         "sold_by": [
           {
             "metrics": {
-              "impact": 39966,
-              "count": 2,
-              "valuation_usd": 150.15338660829642,
-              "valuation_by_country": [{ "chile": 107327 }],
-              "impressions": 120366,
-              "valuation": 107327
+              "impact": 72798,
+              "count": 3,
+              "valuation_usd": 456.3619250685288,
+              "valuation_by_country": [
+                {
+                  "chile": 330636
+                }
+              ],
+              "impressions": 372718,
+              "valuation": 330636
             },
-            "id": "google",
-            "name": "google"
+            "id": "not available",
+            "name": "not available"
           }
         ],
         "preview": {
-          "ad_measurements": { "width": 300, "height": 250 },
+          "ad_measurements": {
+            "width": 300,
+            "height": 250
+          },
           "ad_file": {
-            "name": "https://ads.admetricks.com/banner_2988870f46de0c084cba3a82c2e1d9ed.jpg"
+            "name": "https://ads.admetricks.com/other_campaigns.jpg"
           }
         },
-        "id": 7990066,
+        "id": 6823116,
         "ad_types": [
           {
             "metrics": {
-              "impact": 39966,
-              "count": 2,
-              "valuation_usd": 150.15338660829642,
-              "valuation_by_country": [{ "chile": 107327 }],
-              "impressions": 120366,
-              "valuation": 107327
+              "impact": 72798,
+              "count": 3,
+              "valuation_usd": 456.3619250685288,
+              "valuation_by_country": [
+                {
+                  "chile": 330636
+                }
+              ],
+              "impressions": 372718,
+              "valuation": 330636
             },
             "id": 1,
             "name": "display"
@@ -319,12 +363,16 @@ $response = Requests::post('https://clientel.admetricks.com/website-report/', $h
     "websites": [
       {
         "metrics": {
-          "impact": 39966,
-          "count": 2,
-          "valuation_usd": 150.15338660829642,
-          "valuation_by_country": [{ "chile": 107327 }],
-          "impressions": 120366,
-          "valuation": 107327
+          "impact": 72798,
+          "count": 3,
+          "valuation_usd": 456.3619250685288,
+          "valuation_by_country": [
+            {
+              "chile": 330636
+            }
+          ],
+          "impressions": 372718,
+          "valuation": 330636
         },
         "domain": "20minutos.es",
         "id": 1350
@@ -334,34 +382,228 @@ $response = Requests::post('https://clientel.admetricks.com/website-report/', $h
       {
         "metrics_by_date": [
           {
-            "date": "2021-01-07T00:00:00.000Z",
+            "date": "2021-01-01T00:00:00.000Z",
             "metrics": {
-              "impact": 39966,
-              "count": 2,
-              "valuation_usd": 150.15338660829642,
-              "valuation_by_country": [{ "chile": 107327 }],
-              "impressions": 120366,
-              "valuation": 107327
+              "impact": 24338,
+              "count": 1,
+              "valuation_usd": 152.57198500813615,
+              "valuation_by_country": [
+                {
+                  "chile": 110539
+                }
+              ],
+              "impressions": 124608,
+              "valuation": 110539
             },
-            "date_int": 1609977600000
+            "date_int": 1609459200000
+          },
+          {
+            "date": "2021-01-02T00:00:00.000Z",
+            "metrics": {
+              "impact": 23276,
+              "count": 1,
+              "valuation_usd": 145.91363586729673,
+              "valuation_by_country": [
+                {
+                  "chile": 105715
+                }
+              ],
+              "impressions": 119170,
+              "valuation": 105715
+            },
+            "date_int": 1609545600000
+          },
+          {
+            "date": "2021-01-03T00:00:00.000Z",
+            "metrics": {
+              "impact": 25184,
+              "count": 1,
+              "valuation_usd": 157.87630419309593,
+              "valuation_by_country": [
+                {
+                  "chile": 114382
+                }
+              ],
+              "impressions": 128940,
+              "valuation": 114382
+            },
+            "date_int": 1609632000000
           }
         ],
-        "id": 9077,
-        "name": "falabella"
+        "id": 186036,
+        "name": "other-brand"
       }
     ],
     "brands": [
       {
         "metrics": {
-          "impact": 39966,
-          "count": 2,
-          "valuation_usd": 150.15338660829642,
-          "valuation_by_country": [{ "chile": 107327 }],
-          "impressions": 120366,
-          "valuation": 107327
+          "impact": 72798,
+          "count": 3,
+          "valuation_usd": 456.3619250685288,
+          "valuation_by_country": [
+            {
+              "chile": 330636
+            }
+          ],
+          "impressions": 372718,
+          "valuation": 330636
         },
-        "id": 9077,
-        "name": "falabella"
+        "id": 186036,
+        "name": "other-brand"
+      }
+    ],
+    "summary": {
+      "metrics_by_date": [
+        {
+          "date": "2021-01-01T00:00:00.000Z",
+          "metrics": {
+            "impact": 24338,
+            "valuation_usd": 152.57198500813615,
+            "impressions": 124608,
+            "valuation": 110539
+          },
+          "date_int": 1609459200000
+        },
+        {
+          "date": "2021-01-02T00:00:00.000Z",
+          "metrics": {
+            "impact": 23276,
+            "valuation_usd": 145.91363586729673,
+            "impressions": 119170,
+            "valuation": 105715
+          },
+          "date_int": 1609545600000
+        },
+        {
+          "date": "2021-01-03T00:00:00.000Z",
+          "metrics": {
+            "impact": 25184,
+            "valuation_usd": 157.87630419309593,
+            "impressions": 128940,
+            "valuation": 114382
+          },
+          "date_int": 1609632000000
+        }
+      ],
+      "ad_types": [
+        {
+          "metrics": {
+            "impact": 72798,
+            "valuation_usd": 456.3619250685288,
+            "impressions": 372718,
+            "valuation": 330636
+          },
+          "id": 1,
+          "name": "display"
+        }
+      ],
+      "countries": [
+        {
+          "metrics": {
+            "impact": 72798,
+            "valuation_usd": 456.3619250685288,
+            "impressions": 372718,
+            "valuation": 330636
+          },
+          "id": 1,
+          "name": "chile"
+        }
+      ],
+      "total_impressions": 372718,
+      "total_impact": 72798,
+      "devices": [
+        {
+          "metrics": {
+            "impact": 72798,
+            "valuation_usd": 456.3619250685288,
+            "impressions": 372718,
+            "valuation": 330636
+          },
+          "id": 2,
+          "name": "mobile"
+        }
+      ],
+      "total_valuation_usd": 456.3619250685289,
+      "position": {
+        "first_scroll": 0.0,
+        "second_scroll": 0.0,
+        "third_or_more_scroll": 1.0
+      },
+      "total_valuation": 330636
+    },
+    "brands_with_websites_by_date": [
+      {
+        "metrics": {
+          "impact": 72798,
+          "count": 3,
+          "valuation_usd": 456.3619250685288,
+          "valuation_by_country": [
+            {
+              "chile": 330636
+            }
+          ],
+          "impressions": 372718,
+          "valuation": 330636
+        },
+        "websites_by_date": [
+          {
+            "domain": "20minutos.es",
+            "metrics_by_date": [
+              {
+                "date": "2021-01-01T00:00:00.000Z",
+                "metrics": {
+                  "impact": 24338,
+                  "count": 1,
+                  "valuation_usd": 152.57198500813615,
+                  "valuation_by_country": [
+                    {
+                      "chile": 110539
+                    }
+                  ],
+                  "impressions": 124608,
+                  "valuation": 110539
+                },
+                "date_int": 1609459200000
+              },
+              {
+                "date": "2021-01-02T00:00:00.000Z",
+                "metrics": {
+                  "impact": 23276,
+                  "count": 1,
+                  "valuation_usd": 145.91363586729673,
+                  "valuation_by_country": [
+                    {
+                      "chile": 105715
+                    }
+                  ],
+                  "impressions": 119170,
+                  "valuation": 105715
+                },
+                "date_int": 1609545600000
+              },
+              {
+                "date": "2021-01-03T00:00:00.000Z",
+                "metrics": {
+                  "impact": 25184,
+                  "count": 1,
+                  "valuation_usd": 157.87630419309593,
+                  "valuation_by_country": [
+                    {
+                      "chile": 114382
+                    }
+                  ],
+                  "impressions": 128940,
+                  "valuation": 114382
+                },
+                "date_int": 1609632000000
+              }
+            ],
+            "id": 1350,
+            "days_with_impressions": 3
+          }
+        ],
+        "id": 186036,
+        "name": "other-brand"
       }
     ]
   }

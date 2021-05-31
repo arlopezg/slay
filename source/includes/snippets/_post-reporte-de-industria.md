@@ -99,24 +99,24 @@ $response = Requests::post('https://clientela.admetricks.com/industry-report/', 
 {
   "meta": {
     "date_range": {
-      "start": "2020-11-23T11:06:44.000Z",
-      "end": "2020-11-24T00:48:55.000Z"
+      "start": "2021-01-01T08:16:38.000Z",
+      "end": "2021-01-01T08:16:38.000Z"
     }
   },
   "data": {
     "industries": [
       {
         "metrics": {
-          "impact": 8241,
-          "count": 4,
-          "valuation_usd": 55.02575678173888,
+          "impact": 241,
+          "count": 1,
+          "valuation_usd": 1.1745968322666558,
           "valuation_by_country": [
             {
-              "chile": 39050
+              "chile": 851
             }
           ],
-          "impressions": 30168,
-          "valuation": 39050
+          "impressions": 750,
+          "valuation": 851
         },
         "id": 204,
         "name": "deportes y tiempo libre - artículos deportivos"
@@ -124,107 +124,41 @@ $response = Requests::post('https://clientela.admetricks.com/industry-report/', 
     ],
     "websites_by_date": [
       {
-        "domain": "clarin.com",
+        "domain": "portalfitness.com",
         "metrics_by_date": [
           {
-            "date": "2020-11-23T00:00:00.000Z",
+            "date": "2021-01-01T00:00:00.000Z",
             "metrics": {
-              "impact": 8152,
+              "impact": 241,
               "count": 1,
-              "valuation_usd": 53.775875955480174,
+              "valuation_usd": 1.1745968322666558,
               "valuation_by_country": [
                 {
-                  "chile": 38163
+                  "chile": 851
                 }
               ],
-              "impressions": 29387,
-              "valuation": 38163
+              "impressions": 750,
+              "valuation": 851
             },
-            "date_int": 1606089600000
+            "date_int": 1609459200000
           }
         ],
-        "id": 365
-      },
-      {
-        "domain": "diarioconcepcion.cl",
-        "metrics_by_date": [
-          {
-            "date": "2020-11-23T00:00:00.000Z",
-            "metrics": {
-              "impact": 62,
-              "count": 1,
-              "valuation_usd": 1.0779693710122982,
-              "valuation_by_country": [
-                {
-                  "chile": 765
-                }
-              ],
-              "impressions": 674,
-              "valuation": 765
-            },
-            "date_int": 1606089600000
-          }
-        ],
-        "id": 4250
-      },
-      {
-        "domain": "aplicaciones.info",
-        "metrics_by_date": [
-          {
-            "date": "2020-11-24T00:00:00.000Z",
-            "metrics": {
-              "impact": 22,
-              "count": 1,
-              "valuation_usd": 0.12681992600144684,
-              "valuation_by_country": [
-                {
-                  "chile": 90
-                }
-              ],
-              "impressions": 79,
-              "valuation": 90
-            },
-            "date_int": 1606176000000
-          }
-        ],
-        "id": 386
-      },
-      {
-        "domain": "bluradio.com",
-        "metrics_by_date": [
-          {
-            "date": "2020-11-24T00:00:00.000Z",
-            "metrics": {
-              "impact": 5,
-              "count": 1,
-              "valuation_usd": 0.04509152924495887,
-              "valuation_by_country": [
-                {
-                  "chile": 32
-                }
-              ],
-              "impressions": 28,
-              "valuation": 32
-            },
-            "date_int": 1606176000000
-          }
-        ],
-        "id": 1276
+        "id": 916
       }
     ],
     "ad_types": [
       {
         "metrics": {
-          "impact": 8241,
-          "count": 4,
-          "valuation_usd": 55.02575678173888,
+          "impact": 241,
+          "count": 1,
+          "valuation_usd": 1.1745968322666558,
           "valuation_by_country": [
             {
-              "chile": 39050
+              "chile": 851
             }
           ],
-          "impressions": 30168,
-          "valuation": 39050
+          "impressions": 750,
+          "valuation": 851
         },
         "id": 1,
         "name": "display"
@@ -233,38 +167,52 @@ $response = Requests::post('https://clientela.admetricks.com/industry-report/', 
     "countries": [
       {
         "metrics": {
-          "impact": 8241,
-          "count": 4,
-          "valuation_usd": 55.02575678173888,
+          "impact": 241,
+          "count": 1,
+          "valuation_usd": 1.1745968322666558,
           "valuation_by_country": [
             {
-              "chile": 39050
+              "chile": 851
             }
           ],
-          "impressions": 30168,
-          "valuation": 39050
+          "impressions": 750,
+          "valuation": 851
         },
         "id": 1,
         "name": "chile"
       }
     ],
-    "date_range": {
-      "start": "2020-11-23T11:06:44.000Z",
-      "end": "2020-11-24T00:48:55.000Z"
-    },
+    "website_categories": [
+      {
+        "metrics": {
+          "impact": 241,
+          "count": 1,
+          "valuation_usd": 1.1745968322666558,
+          "valuation_by_country": [
+            {
+              "chile": 851
+            }
+          ],
+          "impressions": 750,
+          "valuation": 851
+        },
+        "id": "unknown",
+        "name": "unknown"
+      }
+    ],
     "sold_by": [
       {
         "metrics": {
-          "impact": 8241,
-          "count": 4,
-          "valuation_usd": 55.02575678173888,
+          "impact": 241,
+          "count": 1,
+          "valuation_usd": 1.1745968322666558,
           "valuation_by_country": [
             {
-              "chile": 39050
+              "chile": 851
             }
           ],
-          "impressions": 30168,
-          "valuation": 39050
+          "impressions": 750,
+          "valuation": 851
         },
         "id": "google",
         "name": "google"
@@ -273,124 +221,59 @@ $response = Requests::post('https://clientela.admetricks.com/industry-report/', 
     "devices": [
       {
         "metrics": {
-          "impact": 8241,
-          "count": 4,
-          "valuation_usd": 55.02575678173888,
+          "impact": 241,
+          "count": 1,
+          "valuation_usd": 1.1745968322666558,
           "valuation_by_country": [
             {
-              "chile": 39050
+              "chile": 851
             }
           ],
-          "impressions": 30168,
-          "valuation": 39050
+          "impressions": 750,
+          "valuation": 851
         },
         "id": 1,
         "name": "desktop"
       }
     ],
-    "summary": {
-      "metrics_by_date": [
-        {
-          "date": "2020-11-23T00:00:00.000Z",
-          "metrics": {
-            "impact": 8214,
-            "valuation_usd": 54.85384532649247,
-            "impressions": 30061,
-            "valuation": 38928
-          },
-          "date_int": 1606089600000
-        },
-        {
-          "date": "2020-11-24T00:00:00.000Z",
-          "metrics": {
-            "impact": 27,
-            "valuation_usd": 0.17191145524640572,
-            "impressions": 107,
-            "valuation": 122
-          },
-          "date_int": 1606176000000
-        }
-      ],
-      "ad_types": [
-        {
-          "metrics": {
-            "impact": 8241,
-            "valuation_usd": 55.02575678173888,
-            "impressions": 30168,
-            "valuation": 39050
-          },
-          "id": 1,
-          "name": "display"
-        }
-      ],
-      "countries": [
-        {
-          "metrics": {
-            "impact": 8241,
-            "valuation_usd": 55.02575678173888,
-            "impressions": 30168,
-            "valuation": 39050
-          },
-          "id": 1,
-          "name": "chile"
-        }
-      ],
-      "total_impressions": 30168,
-      "total_impact": 8241,
-      "devices": [
-        {
-          "metrics": {
-            "impact": 8241,
-            "valuation_usd": 55.02575678173888,
-            "impressions": 30168,
-            "valuation": 39050
-          },
-          "id": 1,
-          "name": "desktop"
-        }
-      ],
-      "total_valuation_usd": 55.02575678173888,
-      "position": {
-        "first_scroll": 0,
-        "second_scroll": 0.75,
-        "third_or_more_scroll": 0.25
-      },
-      "total_valuation": 39050
+    "date_range": {
+      "start": "2021-01-01T08:16:38.000Z",
+      "end": "2021-01-01T08:16:38.000Z"
     },
     "campaigns": [
       {
-        "landing_page": "gympro.cl/deportes-y-fitness/peto-de-entrenamiento-mitre-junior-amarillo.html",
-        "description": null,
+        "landing_page": "promocion.maxrecovery.live/landing-max-recovery-2",
+        "description": "camisa polo | camiseta | cofre | cola caballo | cámara | mano | oreja | tanque activo",
         "ad_format": {
           "id": 154,
           "name": "brand-day"
         },
-        "title": "Peto Deportivo, Peto Polera de Entrenamiento - Mitre",
+        "title": "Max Recovery | Handy Gym",
         "date_range": {
-          "start": "2020-11-23T11:06:44.000Z",
-          "end": "2020-11-23T11:06:44.000Z"
+          "start": "2021-01-01T08:16:38.000Z",
+          "end": "2021-01-01T08:16:38.000Z"
         },
         "industry": {
           "id": 204,
           "name": "deportes y tiempo libre - artículos deportivos"
         },
         "brand": {
-          "id": 141894,
-          "name": "gympro"
+          "id": 365920,
+          "name": "max recovery chile"
         },
         "countries": [
           {
             "metrics": {
-              "impact": 8152,
+              "impact": 241,
               "count": 1,
-              "valuation_usd": 53.775875955480174,
+              "valuation_usd": 1.1745968322666558,
               "valuation_by_country": [
                 {
-                  "chile": 38163
+                  "chile": 851
                 }
               ],
-              "impressions": 29387,
-              "valuation": 38163
+              "impressions": 750,
+              "valuation": 851
             },
             "id": 1,
             "name": "chile"
@@ -399,64 +282,64 @@ $response = Requests::post('https://clientela.admetricks.com/industry-report/', 
         "devices": [
           {
             "metrics": {
-              "impact": 8152,
+              "impact": 241,
               "count": 1,
-              "valuation_usd": 53.775875955480174,
+              "valuation_usd": 1.1745968322666558,
               "valuation_by_country": [
                 {
-                  "chile": 38163
+                  "chile": 851
                 }
               ],
-              "impressions": 29387,
-              "valuation": 38163
+              "impressions": 750,
+              "valuation": 851
             },
             "id": 1,
             "name": "desktop"
           }
         ],
         "metrics": {
-          "impact": 8152,
+          "impact": 241,
           "count": 1,
-          "valuation_usd": 53.775875955480174,
+          "valuation_usd": 1.1745968322666558,
           "valuation_by_country": [
             {
-              "chile": 38163
+              "chile": 851
             }
           ],
-          "impressions": 29387,
-          "valuation": 38163
+          "impressions": 750,
+          "valuation": 851
         },
         "websites": [
           {
             "metrics": {
-              "impact": 8152,
+              "impact": 241,
               "count": 1,
-              "valuation_usd": 53.775875955480174,
+              "valuation_usd": 1.1745968322666558,
               "valuation_by_country": [
                 {
-                  "chile": 38163
+                  "chile": 851
                 }
               ],
-              "impressions": 29387,
-              "valuation": 38163
+              "impressions": 750,
+              "valuation": 851
             },
-            "domain": "clarin.com",
-            "id": 365
+            "domain": "portalfitness.com",
+            "id": 916
           }
         ],
         "sold_by": [
           {
             "metrics": {
-              "impact": 8152,
+              "impact": 241,
               "count": 1,
-              "valuation_usd": 53.775875955480174,
+              "valuation_usd": 1.1745968322666558,
               "valuation_by_country": [
                 {
-                  "chile": 38163
+                  "chile": 851
                 }
               ],
-              "impressions": 29387,
-              "valuation": 38163
+              "impressions": 750,
+              "valuation": 851
             },
             "id": "google",
             "name": "google"
@@ -464,293 +347,27 @@ $response = Requests::post('https://clientela.admetricks.com/industry-report/', 
         ],
         "preview": {
           "ad_measurements": {
-            "width": 970,
-            "height": 300
+            "width": 1200,
+            "height": 280
           },
           "ad_file": {
-            "name": "https://ads.admetricks.com/banner_145e33725b203c379d1e3aaf7bbdf5cf.jpg"
+            "name": "https://ads.admetricks.com/banner_b70245a7aecbc2b92114fb06e05d86c4.jpg"
           }
         },
-        "id": 7797882,
+        "id": 7733539,
         "ad_types": [
           {
             "metrics": {
-              "impact": 8152,
+              "impact": 241,
               "count": 1,
-              "valuation_usd": 53.775875955480174,
+              "valuation_usd": 1.1745968322666558,
               "valuation_by_country": [
                 {
-                  "chile": 38163
+                  "chile": 851
                 }
               ],
-              "impressions": 29387,
-              "valuation": 38163
-            },
-            "id": 1,
-            "name": "display"
-          }
-        ]
-      },
-      {
-        "landing_page": "dirtbrothers.cl/products/zapatilla-dc-shoes-hombre-dc-infinite-m-shoe-b",
-        "description": "amarillo | blanco | engranaje deportes | equipo protección personal | guante | guante bateo | guante bicicleta | guante seguridad | ropa | ropa deporte",
-        "ad_format": {
-          "id": 154,
-          "name": "brand-day"
-        },
-        "title": "Zapatilla DC Shoes Hombre DC INFINITE M SHOE B– Dirt Brothers",
-        "date_range": {
-          "start": "2020-11-23T17:20:52.000Z",
-          "end": "2020-11-23T17:20:52.000Z"
-        },
-        "industry": {
-          "id": 204,
-          "name": "deportes y tiempo libre - artículos deportivos"
-        },
-        "brand": {
-          "id": 342746,
-          "name": "dirt brothers"
-        },
-        "countries": [
-          {
-            "metrics": {
-              "impact": 62,
-              "count": 1,
-              "valuation_usd": 1.0779693710122982,
-              "valuation_by_country": [
-                {
-                  "chile": 765
-                }
-              ],
-              "impressions": 674,
-              "valuation": 765
-            },
-            "id": 1,
-            "name": "chile"
-          }
-        ],
-        "devices": [
-          {
-            "metrics": {
-              "impact": 62,
-              "count": 1,
-              "valuation_usd": 1.0779693710122982,
-              "valuation_by_country": [
-                {
-                  "chile": 765
-                }
-              ],
-              "impressions": 674,
-              "valuation": 765
-            },
-            "id": 1,
-            "name": "desktop"
-          }
-        ],
-        "metrics": {
-          "impact": 62,
-          "count": 1,
-          "valuation_usd": 1.0779693710122982,
-          "valuation_by_country": [
-            {
-              "chile": 765
-            }
-          ],
-          "impressions": 674,
-          "valuation": 765
-        },
-        "websites": [
-          {
-            "metrics": {
-              "impact": 62,
-              "count": 1,
-              "valuation_usd": 1.0779693710122982,
-              "valuation_by_country": [
-                {
-                  "chile": 765
-                }
-              ],
-              "impressions": 674,
-              "valuation": 765
-            },
-            "domain": "diarioconcepcion.cl",
-            "id": 4250
-          }
-        ],
-        "sold_by": [
-          {
-            "metrics": {
-              "impact": 62,
-              "count": 1,
-              "valuation_usd": 1.0779693710122982,
-              "valuation_by_country": [
-                {
-                  "chile": 765
-                }
-              ],
-              "impressions": 674,
-              "valuation": 765
-            },
-            "id": "google",
-            "name": "google"
-          }
-        ],
-        "preview": {
-          "ad_measurements": {
-            "width": 160,
-            "height": 600
-          },
-          "ad_file": {
-            "name": "https://ads.admetricks.com/banner_869179d3f518e157cc726586f752bc49.jpg"
-          }
-        },
-        "id": 7798600,
-        "ad_types": [
-          {
-            "metrics": {
-              "impact": 62,
-              "count": 1,
-              "valuation_usd": 1.0779693710122982,
-              "valuation_by_country": [
-                {
-                  "chile": 765
-                }
-              ],
-              "impressions": 674,
-              "valuation": 765
-            },
-            "id": 1,
-            "name": "display"
-          }
-        ]
-      },
-      {
-        "landing_page": "yerka.cl/products/chapa-yerka",
-        "description": null,
-        "ad_format": {
-          "id": 154,
-          "name": "brand-day"
-        },
-        "title": "Chapa Yerka– Yerka Bikes Chile",
-        "date_range": {
-          "start": "2020-11-24T00:48:55.000Z",
-          "end": "2020-11-24T00:48:55.000Z"
-        },
-        "industry": {
-          "id": 204,
-          "name": "deportes y tiempo libre - artículos deportivos"
-        },
-        "brand": {
-          "id": 120972,
-          "name": "yerka"
-        },
-        "countries": [
-          {
-            "metrics": {
-              "impact": 22,
-              "count": 1,
-              "valuation_usd": 0.12681992600144684,
-              "valuation_by_country": [
-                {
-                  "chile": 90
-                }
-              ],
-              "impressions": 79,
-              "valuation": 90
-            },
-            "id": 1,
-            "name": "chile"
-          }
-        ],
-        "devices": [
-          {
-            "metrics": {
-              "impact": 22,
-              "count": 1,
-              "valuation_usd": 0.12681992600144684,
-              "valuation_by_country": [
-                {
-                  "chile": 90
-                }
-              ],
-              "impressions": 79,
-              "valuation": 90
-            },
-            "id": 1,
-            "name": "desktop"
-          }
-        ],
-        "metrics": {
-          "impact": 22,
-          "count": 1,
-          "valuation_usd": 0.12681992600144684,
-          "valuation_by_country": [
-            {
-              "chile": 90
-            }
-          ],
-          "impressions": 79,
-          "valuation": 90
-        },
-        "websites": [
-          {
-            "metrics": {
-              "impact": 22,
-              "count": 1,
-              "valuation_usd": 0.12681992600144684,
-              "valuation_by_country": [
-                {
-                  "chile": 90
-                }
-              ],
-              "impressions": 79,
-              "valuation": 90
-            },
-            "domain": "aplicaciones.info",
-            "id": 386
-          }
-        ],
-        "sold_by": [
-          {
-            "metrics": {
-              "impact": 22,
-              "count": 1,
-              "valuation_usd": 0.12681992600144684,
-              "valuation_by_country": [
-                {
-                  "chile": 90
-                }
-              ],
-              "impressions": 79,
-              "valuation": 90
-            },
-            "id": "google",
-            "name": "google"
-          }
-        ],
-        "preview": {
-          "ad_measurements": {
-            "width": 970,
-            "height": 300
-          },
-          "ad_file": {
-            "name": "https://ads.admetricks.com/banner_cee4bae399a44001dde42e6fecc48886.jpg"
-          }
-        },
-        "id": 7799653,
-        "ad_types": [
-          {
-            "metrics": {
-              "impact": 22,
-              "count": 1,
-              "valuation_usd": 0.12681992600144684,
-              "valuation_by_country": [
-                {
-                  "chile": 90
-                }
-              ],
-              "impressions": 79,
-              "valuation": 90
+              "impressions": 750,
+              "valuation": 851
             },
             "id": 1,
             "name": "display"
@@ -761,229 +378,163 @@ $response = Requests::post('https://clientela.admetricks.com/industry-report/', 
     "websites": [
       {
         "metrics": {
-          "impact": 8152,
+          "impact": 241,
           "count": 1,
-          "valuation_usd": 53.775875955480174,
+          "valuation_usd": 1.1745968322666558,
           "valuation_by_country": [
             {
-              "chile": 38163
+              "chile": 851
             }
           ],
-          "impressions": 29387,
-          "valuation": 38163
+          "impressions": 750,
+          "valuation": 851
         },
-        "domain": "clarin.com",
-        "id": 365
-      },
-      {
-        "metrics": {
-          "impact": 62,
-          "count": 1,
-          "valuation_usd": 1.0779693710122982,
-          "valuation_by_country": [
-            {
-              "chile": 765
-            }
-          ],
-          "impressions": 674,
-          "valuation": 765
-        },
-        "domain": "diarioconcepcion.cl",
-        "id": 4250
-      },
-      {
-        "metrics": {
-          "impact": 22,
-          "count": 1,
-          "valuation_usd": 0.12681992600144684,
-          "valuation_by_country": [
-            {
-              "chile": 90
-            }
-          ],
-          "impressions": 79,
-          "valuation": 90
-        },
-        "domain": "aplicaciones.info",
-        "id": 386
-      },
-      {
-        "metrics": {
-          "impact": 5,
-          "count": 1,
-          "valuation_usd": 0.04509152924495887,
-          "valuation_by_country": [
-            {
-              "chile": 32
-            }
-          ],
-          "impressions": 28,
-          "valuation": 32
-        },
-        "domain": "bluradio.com",
-        "id": 1276
+        "domain": "portalfitness.com",
+        "id": 916
       }
     ],
     "brands_by_date": [
       {
         "metrics_by_date": [
           {
-            "date": "2020-11-23T00:00:00.000Z",
+            "date": "2021-01-01T00:00:00.000Z",
             "metrics": {
-              "impact": 8152,
+              "impact": 241,
               "count": 1,
-              "valuation_usd": 53.775875955480174,
+              "valuation_usd": 1.1745968322666558,
               "valuation_by_country": [
                 {
-                  "chile": 38163
+                  "chile": 851
                 }
               ],
-              "impressions": 29387,
-              "valuation": 38163
+              "impressions": 750,
+              "valuation": 851
             },
-            "date_int": 1606089600000
+            "date_int": 1609459200000
           }
         ],
-        "id": 141894,
-        "name": "gympro"
-      },
-      {
-        "metrics_by_date": [
-          {
-            "date": "2020-11-23T00:00:00.000Z",
-            "metrics": {
-              "impact": 62,
-              "count": 1,
-              "valuation_usd": 1.0779693710122982,
-              "valuation_by_country": [
-                {
-                  "chile": 765
-                }
-              ],
-              "impressions": 674,
-              "valuation": 765
-            },
-            "date_int": 1606089600000
-          }
-        ],
-        "id": 342746,
-        "name": "dirt brothers"
+        "id": 365920,
+        "name": "max recovery chile"
       }
     ],
     "brands": [
       {
         "metrics": {
-          "impact": 8152,
+          "impact": 241,
           "count": 1,
-          "valuation_usd": 53.775875955480174,
+          "valuation_usd": 1.1745968322666558,
           "valuation_by_country": [
             {
-              "chile": 38163
+              "chile": 851
             }
           ],
-          "impressions": 29387,
-          "valuation": 38163
+          "impressions": 750,
+          "valuation": 851
         },
-        "id": 141894,
-        "name": "gympro"
-      },
-      {
-        "metrics": {
-          "impact": 62,
-          "count": 1,
-          "valuation_usd": 1.0779693710122982,
-          "valuation_by_country": [
-            {
-              "chile": 765
-            }
-          ],
-          "impressions": 674,
-          "valuation": 765
-        },
-        "id": 342746,
-        "name": "dirt brothers"
+        "id": 365920,
+        "name": "max recovery chile"
       }
     ],
+    "summary": {
+      "metrics_by_date": [
+        {
+          "date": "2021-01-01T00:00:00.000Z",
+          "metrics": {
+            "impact": 241,
+            "valuation_usd": 1.1745968322666558,
+            "impressions": 750,
+            "valuation": 851
+          },
+          "date_int": 1609459200000
+        }
+      ],
+      "ad_types": [
+        {
+          "metrics": {
+            "impact": 241,
+            "valuation_usd": 1.1745968322666558,
+            "impressions": 750,
+            "valuation": 851
+          },
+          "id": 1,
+          "name": "display"
+        }
+      ],
+      "countries": [
+        {
+          "metrics": {
+            "impact": 241,
+            "valuation_usd": 1.1745968322666558,
+            "impressions": 750,
+            "valuation": 851
+          },
+          "id": 1,
+          "name": "chile"
+        }
+      ],
+      "total_impressions": 750,
+      "total_impact": 241,
+      "devices": [
+        {
+          "metrics": {
+            "impact": 241,
+            "valuation_usd": 1.1745968322666558,
+            "impressions": 750,
+            "valuation": 851
+          },
+          "id": 1,
+          "name": "desktop"
+        }
+      ],
+      "total_valuation_usd": 1.1745968322666558,
+      "position": {
+        "first_scroll": 0.0,
+        "second_scroll": 0.0,
+        "third_or_more_scroll": 1.0
+      },
+      "total_valuation": 851
+    },
     "brands_with_websites_by_date": [
       {
         "metrics": {
-          "impact": 8152,
+          "impact": 241,
           "count": 1,
-          "valuation_usd": 53.775875955480174,
+          "valuation_usd": 1.1745968322666558,
           "valuation_by_country": [
             {
-              "chile": 38163
+              "chile": 851
             }
           ],
-          "impressions": 29387,
-          "valuation": 38163
+          "impressions": 750,
+          "valuation": 851
         },
         "websites_by_date": [
           {
-            "domain": "clarin.com",
+            "domain": "portalfitness.com",
             "metrics_by_date": [
               {
-                "date": "2020-11-23T00:00:00.000Z",
+                "date": "2021-01-01T00:00:00.000Z",
                 "metrics": {
-                  "impact": 8152,
+                  "impact": 241,
                   "count": 1,
-                  "valuation_usd": 53.775875955480174,
+                  "valuation_usd": 1.1745968322666558,
                   "valuation_by_country": [
                     {
-                      "chile": 38163
+                      "chile": 851
                     }
                   ],
-                  "impressions": 29387,
-                  "valuation": 38163
+                  "impressions": 750,
+                  "valuation": 851
                 },
-                "date_int": 1606089600000
+                "date_int": 1609459200000
               }
             ],
-            "id": 365
+            "id": 916,
+            "days_with_impressions": 1
           }
         ],
-        "id": 141894,
-        "name": "gympro"
-      },
-      {
-        "metrics": {
-          "impact": 62,
-          "count": 1,
-          "valuation_usd": 1.0779693710122982,
-          "valuation_by_country": [
-            {
-              "chile": 765
-            }
-          ],
-          "impressions": 674,
-          "valuation": 765
-        },
-        "websites_by_date": [
-          {
-            "domain": "diarioconcepcion.cl",
-            "metrics_by_date": [
-              {
-                "date": "2020-11-23T00:00:00.000Z",
-                "metrics": {
-                  "impact": 62,
-                  "count": 1,
-                  "valuation_usd": 1.0779693710122982,
-                  "valuation_by_country": [
-                    {
-                      "chile": 765
-                    }
-                  ],
-                  "impressions": 674,
-                  "valuation": 765
-                },
-                "date_int": 1606089600000
-              }
-            ],
-            "id": 4250
-          }
-        ],
-        "id": 342746,
-        "name": "dirt brothers"
+        "id": 365920,
+        "name": "max recovery chile"
       }
     ]
   }
