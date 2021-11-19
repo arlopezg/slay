@@ -55,6 +55,64 @@ $response = Requests::post('https://clientela.admetricks.com/industry-report/', 
 ?>
 ```
 
+> Ejemplo de petición filtrando por industrias
+
+```shell
+curl -X POST -H "Authorization: Token YOUR_TOKEN" "https://clientela.admetricks.com/market-report/data/v3/?day=2020-10-01&country=1&device=1&ad_type=1&industries=281,282,288,289"
+```
+
+```python
+import requests
+
+headers = {
+    'Authorization': 'Token YOUR_TOKEN',
+    'content-type': 'application/json'
+}
+
+params = (
+    ('day', '2020-10-01'),
+    ('country', '1'),
+    ('device', '1'),
+    ('ad_type', '1'),
+    ('industries', '281,282,288,289')
+)
+
+response = requests.post(
+  'https://clientela.admetricks.com/market-report/data/v3/',
+  headers=headers,
+  params=params
+)
+```
+
+```javascript
+const endpoint = "https://clientela.admetricks.com/market-report/data/v3/?day=2020-10-01&country=1&device=1&ad_type=1&industries=281,282,288,289"
+
+fetch(endpoint, {
+    method: 'POST',
+    headers: {
+        'Authorization': 'Token YOUR_TOKEN',
+        'content-type': 'application/json'
+    }
+});
+```
+
+```php
+<?php
+
+include('vendor/rmccue/requests/library/Requests.php');
+Requests::register_autoloader();
+
+$headers = array(
+    'authorization' => 'Token YOUR_TOKEN',
+    'content-type' => 'application/json;charset=UTF-8'
+);
+$endpoint = 'https://clientela.admetricks.com/market-report/data/v3/?day=2020-10-01&country=1&device=1&ad_type=1&industries=281,282,288,289'
+
+$response = Requests::post($endpoint, $headers);
+
+?>
+```
+
 > Ejemplo de respuesta exitosa
 
 ```json
