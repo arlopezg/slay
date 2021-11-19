@@ -48,9 +48,9 @@ $headers = array(
     'authorization' => 'Token YOUR_TOKEN',
     'content-type' => 'application/json;charset=UTF-8'
 );
-$data = '{"order_by":"valuation","new_campaigns":1,"ad_format":1,"ad_types":{"include":[{"id":1}]},"countries":{"include":[{"id":1}]},"devices":{"include":[{"id":1}]},"date_range":{"start":"2020-11-23T00:00:00.000","end":"2020-11-24T23:59:59.999","group_by":"day"},"industries":{"include":[{"id":204,"name":"deportes y tiempo libre - art\xEDculos deportivos"}]}}';
+$endpoint = 'https://clientela.admetricks.com/market-report/data/v3/?day=2020-10-01&country=1&device=1&ad_type=1'
 
-$response = Requests::post('https://clientela.admetricks.com/industry-report/', $headers, $data);
+$response = Requests::post($endpoint, $headers);
 
 ?>
 ```
