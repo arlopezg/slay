@@ -74,6 +74,11 @@ $response = Requests::post('https://clientela.admetricks.com/campaign-report/', 
 
 ```json
 {
+  "api_hits":{
+    "consumed": 1,
+    "percentage_consumed": "0.0%",
+    "available": 99999
+  },
   "meta": {
     "date_range": {
       "start": "2020-12-28T11:33:16.000Z",

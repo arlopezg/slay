@@ -54,6 +54,11 @@ $response = Requests::post('https://clientel.admetricks.com/website-report/', $h
 
 ```json
 {
+  "api_hits":{
+    "consumed": 1,
+    "percentage_consumed": "0.0%",
+    "available": 99999
+  },
   "meta": {
     "date_range": {
       "start": "2021-01-07T03:21:38.000Z",

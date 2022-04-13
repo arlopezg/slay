@@ -66,6 +66,11 @@ $response = Requests::post('https://clientela.admetricks.com/market-report/', $h
 
 ```json
 {
+  "api_hits":{
+    "consumed": 1,
+    "percentage_consumed": "0.0%",
+    "available": 99999
+  },
   "meta": {
     "date_range": {
       "start": "2021-01-25T00:00:01.000Z",
