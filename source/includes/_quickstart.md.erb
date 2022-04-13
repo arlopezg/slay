@@ -39,6 +39,23 @@ Un límite de uso (del inglés _rate limit_) es el **número de llamadas** a la 
 
 **La API de Admetricks está sujeto a límites de tarifas**. Si el plan tiene accesso a API, se puede realizar **máximo 190 consultas exitosas a la API por mes**. Cuando el límite sea excedido, la consulta responderá con el código `403 Forbidden` y podrá volver a realizar consultas una vez termine el mes en curso. Por otro lado, solo se puede realizar una sola consulta a la vez, por lo que Admetricks responderá con el código `429 Too Many Requests` en caso de realizar más consultas simultáneas.
 
+Para conecer cuantas consultas (`api_hits`) se han consumido por el plan, en la respuesta aparece la etiqueta `api_hits` donde se entregan 3 valores:
+
+- `consumed`: Es la cantidad de consultas consumidas por el plan
+- `percentage_consumed`: Es el porcentaje qde consultas que se han consumido
+- `available`: Es la cantidad de consultas que quedan disponibles para alcanzar el limite del plan
+
+```
+{
+  "api_hits":{
+    "consumed": 1,
+    "percentage_consumed": "0.0%",
+    "available": 99999
+  }
+  ...
+}
+
+```  
 
 <span id="time_range_limits"></span>
 
