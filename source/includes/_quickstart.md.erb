@@ -41,9 +41,10 @@ Un límite de uso (del inglés _rate limit_) es el **número de llamadas** a la 
 
 ### Consumo
 Para conocer cuál es el consumo de consultas del plan, en la respuesta aparece la etiqueta `api_hits` donde se entregan 3 valores:
+
 - `consumed`: Es la cantidad de consultas consumidas por el plan.
 - `percentage_consumed`: Es el porcentaje de consultas que se han consumido por el plan.
-- `available`: Es la cantidad de consultas que quedan disponibles para alcanzar el límite del plan.
+- `available`: Es la cantidad de consultas que quedan disponibles para alcanzar el limite del plan.
 
 ```
 {
@@ -54,7 +55,8 @@ Para conocer cuál es el consumo de consultas del plan, en la respuesta aparece 
   }
   ...
 }
-```  
+
+``` 
 
 <span id="time_range_limits"></span>
 
