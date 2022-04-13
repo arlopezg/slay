@@ -54,6 +54,11 @@ $response = Requests::post('https://clientela.admetricks.com/brands-report/', $h
 
 ```json
 {
+  "api_hits":{
+    "consumed": 1,
+    "percentage_consumed": "0.0%",
+    "available": 99999
+  },
   "meta": {
     "date_range": {
       "start": "2020-12-29T00:25:40.000Z",

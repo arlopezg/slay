@@ -71,6 +71,11 @@ $response = Requests::post('https://clientela.admetricks.com/verification-report
 
 ```json
 {
+  "api_hits":{
+    "consumed": 1,
+    "percentage_consumed": "0.0%",
+    "available": 99999
+  },
   "meta": {
     "date_range": {
       "start": "2021-01-08T06:02:16.000Z",

@@ -97,6 +97,11 @@ $response = Requests::post('https://clientela.admetricks.com/industry-report/', 
 
 ```json
 {
+  "api_hits":{
+    "consumed": 1,
+    "percentage_consumed": "0.0%",
+    "available": 99999
+  },
   "meta": {
     "date_range": {
       "start": "2020-11-23T11:06:44.000Z",
