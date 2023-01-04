@@ -31848,6 +31848,351 @@ Para realizar esta operación es obligatorio utilizar tu <strong><a href="#confi
   
   
 
+<a id="opIdDatos de Mercado (v4.0)"></a>
+### Datos de Mercado (v4.0)
+
+<%= partial "includes/snippets/post-datos-de-mercado-(v4.0).md" %>
+
+`POST /market-report/data/v4/`
+
+<!-- Insert code snippets here -->
+
+<ul class="tag--list" >
+  
+  
+  <li>
+    <a class="tag tag__green">Exportación masiva</a>
+  </li>
+  
+  
+</ul>
+
+Exporta todos los datos de un mercado utilizando un formato más ligero
+
+<strong style="display: block; margin-top: 15px;">Petición</strong>
+
+<details class="card">
+  <summary>Parámetros</summary>
+
+  <ul class="list--request-params">
+  
+    
+      <li class="param__childundefined ">
+        <strong class="param__name">
+          
+          ad_type
+        </strong>
+        <small class="param__type">integer</small>
+        <span class="param__required" title="Requerido">*</span>
+        
+          <span class="param__desc">Filtrar por AdType</span>
+          <div class="param--enums">
+            
+          </div>
+        
+      </li>
+    
+  
+    
+      <li class="param__childundefined ">
+        <strong class="param__name">
+          
+          country
+        </strong>
+        <small class="param__type">integer</small>
+        <span class="param__required" title="Requerido">*</span>
+        
+          <span class="param__desc">Filtrar por país</span>
+          <div class="param--enums">
+            
+          </div>
+        
+      </li>
+    
+  
+    
+      <li class="param__childundefined ">
+        <strong class="param__name">
+          
+          day
+        </strong>
+        <small class="param__type">string</small>
+        <span class="param__required" title="Requerido">*</span>
+        
+          <span class="param__desc">Formato: `YYYY-MM-DD`</span>
+          <div class="param--enums">
+            
+          </div>
+        
+      </li>
+    
+  
+    
+      <li class="param__childundefined ">
+        <strong class="param__name">
+          
+          device
+        </strong>
+        <small class="param__type">integer</small>
+        <span class="param__required" title="Requerido">*</span>
+        
+          <span class="param__desc">Filtrar por dispositivo</span>
+          <div class="param--enums">
+            
+          </div>
+        
+      </li>
+    
+  
+    
+      <li class="param__childundefined ">
+        <strong class="param__name">
+          
+          industries
+        </strong>
+        <small class="param__type">array</small>
+        
+        
+          <span class="param__desc">Industrias a incluir</span>
+          <div class="param--enums">
+            
+          </div>
+        
+      </li>
+    
+  
+  </ul>
+</details>
+
+<strong style="display: block; margin-top: 15px;">Respuestas</strong>
+
+<details class="card" style="margin-bottom: 5px">
+  <summary>201</summary>
+
+  <ul class="list--request-params">
+    
+    <li class="param__child0 ">
+      <strong class="param__name">
+        
+        body
+      </strong>
+      <small class="param__type">object</small>
+      <br />
+      
+    </li>
+    
+    <li class="param__child1 ">
+      <strong class="param__name">
+        
+        ad_link
+      </strong>
+      <small class="param__type">string</small>
+      <br />
+      <span class="param__desc">Anuncio</span>
+    </li>
+    
+    <li class="param__child1 ">
+      <strong class="param__name">
+        
+        ad_type
+      </strong>
+      <small class="param__type">string</small>
+      <br />
+      <span class="param__desc">Tipo de publicidad (nombre)</span>
+    </li>
+    
+    <li class="param__child1 ">
+      <strong class="param__name">
+        
+        ad_type_id
+      </strong>
+      <small class="param__type">integer</small>
+      <br />
+      <span class="param__desc">Tipo de publicidad</span>
+    </li>
+    
+    <li class="param__child1 ">
+      <strong class="param__name">
+        
+        brand
+      </strong>
+      <small class="param__type">string</small>
+      <br />
+      <span class="param__desc">Nombre de un avisador o marca</span>
+    </li>
+    
+    <li class="param__child1 ">
+      <strong class="param__name">
+        
+        campaign_id
+      </strong>
+      <small class="param__type">integer</small>
+      <br />
+      <span class="param__desc">Identificador de campaña</span>
+    </li>
+    
+    <li class="param__child1 ">
+      <strong class="param__name">
+        
+        campaign_landing_page
+      </strong>
+      <small class="param__type">string</small>
+      <br />
+      <span class="param__desc">Link de campaña</span>
+    </li>
+    
+    <li class="param__child1 ">
+      <strong class="param__name">
+        
+        campaign_name
+      </strong>
+      <small class="param__type">string</small>
+      <br />
+      <span class="param__desc">Nombre de campaña</span>
+    </li>
+    
+    <li class="param__child1 ">
+      <strong class="param__name">
+        
+        country
+      </strong>
+      <small class="param__type">string</small>
+      <br />
+      <span class="param__desc">País (nombre)</span>
+    </li>
+    
+    <li class="param__child1 ">
+      <strong class="param__name">
+        
+        country_id
+      </strong>
+      <small class="param__type">integer</small>
+      <br />
+      <span class="param__desc">País (ID)</span>
+    </li>
+    
+    <li class="param__child1 ">
+      <strong class="param__name">
+        
+        date
+      </strong>
+      <small class="param__type">string</small>
+      <br />
+      <span class="param__desc">Fecha</span>
+    </li>
+    
+    <li class="param__child1 ">
+      <strong class="param__name">
+        
+        device
+      </strong>
+      <small class="param__type">string</small>
+      <br />
+      <span class="param__desc">Tipo de dispositivo</span>
+    </li>
+    
+    <li class="param__child1 ">
+      <strong class="param__name">
+        
+        industry
+      </strong>
+      <small class="param__type">string</small>
+      <br />
+      <span class="param__desc">Industria (nombre)</span>
+    </li>
+    
+    <li class="param__child1 ">
+      <strong class="param__name">
+        
+        industry_id
+      </strong>
+      <small class="param__type">integer</small>
+      <br />
+      <span class="param__desc">Industria (ID)</span>
+    </li>
+    
+    <li class="param__child1 ">
+      <strong class="param__name">
+        
+        metrics_impressions
+      </strong>
+      <small class="param__type">integer</small>
+      <br />
+      <span class="param__desc">Total de impresiones</span>
+    </li>
+    
+    <li class="param__child1 ">
+      <strong class="param__name">
+        
+        metrics_valuation
+      </strong>
+      <small class="param__type">integer</small>
+      <br />
+      <span class="param__desc">Valorización en pesos chilenos</span>
+    </li>
+    
+    <li class="param__child1 ">
+      <strong class="param__name">
+        
+        metrics_valuation_usd
+      </strong>
+      <small class="param__type">integer</small>
+      <br />
+      <span class="param__desc">Valorización en dólares</span>
+    </li>
+    
+    <li class="param__child1 ">
+      <strong class="param__name">
+        
+        screenshot_link
+      </strong>
+      <small class="param__type">string</small>
+      <br />
+      <span class="param__desc">Pantallazo de captura</span>
+    </li>
+    
+    <li class="param__child1 ">
+      <strong class="param__name">
+        
+        website
+      </strong>
+      <small class="param__type">string</small>
+      <br />
+      <span class="param__desc">Nombre de medio o soporte</span>
+    </li>
+    
+    <li class="param__child1 ">
+      <strong class="param__name">
+        
+        website_id
+      </strong>
+      <small class="param__type">integer</small>
+      <br />
+      <span class="param__desc">Identificador de medio o soporte</span>
+    </li>
+    
+  </ul>
+
+  <a class="tag tag__blue go-to-top">Ocultar</a>
+</details>
+
+<aside class="warning">
+  En caso de errores y otros posibles resultados, Admetricks utiliza códigos HTTP estándar para entregar más información.
+  Más información en la sección <a href="#errores-y-otros-resultados">Errores y otros resultados</a>
+</aside>
+
+<aside class="warning">
+Para realizar esta operación es obligatorio utilizar tu <strong><a href="#configura-tu-token">token de acceso</a></strong>
+</aside>
+<!-- END OP -->
+
+  
+  
+  
+  
+  
+  
+
 <a id="opIdDatos de Mercado (v5.0)"></a>
 ### Datos de Mercado (v5.0)
 
@@ -32289,351 +32634,6 @@ Exporta todos los datos de un mercado con 4 decimales de precición
       <small class="param__type">integer</small>
       <br />
       <span class="param__desc">Secciones de website</span>
-    </li>
-    
-  </ul>
-
-  <a class="tag tag__blue go-to-top">Ocultar</a>
-</details>
-
-<aside class="warning">
-  En caso de errores y otros posibles resultados, Admetricks utiliza códigos HTTP estándar para entregar más información.
-  Más información en la sección <a href="#errores-y-otros-resultados">Errores y otros resultados</a>
-</aside>
-
-<aside class="warning">
-Para realizar esta operación es obligatorio utilizar tu <strong><a href="#configura-tu-token">token de acceso</a></strong>
-</aside>
-<!-- END OP -->
-
-  
-  
-  
-  
-  
-  
-
-<a id="opIdDatos de Mercado (v4.0)"></a>
-### Datos de Mercado (v4.0)
-
-<%= partial "includes/snippets/post-datos-de-mercado-(v4.0).md" %>
-
-`POST /market-report/data/v4/`
-
-<!-- Insert code snippets here -->
-
-<ul class="tag--list" >
-  
-  
-  <li>
-    <a class="tag tag__green">Exportación masiva</a>
-  </li>
-  
-  
-</ul>
-
-Exporta todos los datos de un mercado utilizando un formato más ligero
-
-<strong style="display: block; margin-top: 15px;">Petición</strong>
-
-<details class="card">
-  <summary>Parámetros</summary>
-
-  <ul class="list--request-params">
-  
-    
-      <li class="param__childundefined ">
-        <strong class="param__name">
-          
-          ad_type
-        </strong>
-        <small class="param__type">integer</small>
-        <span class="param__required" title="Requerido">*</span>
-        
-          <span class="param__desc">Filtrar por AdType</span>
-          <div class="param--enums">
-            
-          </div>
-        
-      </li>
-    
-  
-    
-      <li class="param__childundefined ">
-        <strong class="param__name">
-          
-          country
-        </strong>
-        <small class="param__type">integer</small>
-        <span class="param__required" title="Requerido">*</span>
-        
-          <span class="param__desc">Filtrar por país</span>
-          <div class="param--enums">
-            
-          </div>
-        
-      </li>
-    
-  
-    
-      <li class="param__childundefined ">
-        <strong class="param__name">
-          
-          day
-        </strong>
-        <small class="param__type">string</small>
-        <span class="param__required" title="Requerido">*</span>
-        
-          <span class="param__desc">Formato: `YYYY-MM-DD`</span>
-          <div class="param--enums">
-            
-          </div>
-        
-      </li>
-    
-  
-    
-      <li class="param__childundefined ">
-        <strong class="param__name">
-          
-          device
-        </strong>
-        <small class="param__type">integer</small>
-        <span class="param__required" title="Requerido">*</span>
-        
-          <span class="param__desc">Filtrar por dispositivo</span>
-          <div class="param--enums">
-            
-          </div>
-        
-      </li>
-    
-  
-    
-      <li class="param__childundefined ">
-        <strong class="param__name">
-          
-          industries
-        </strong>
-        <small class="param__type">array</small>
-        
-        
-          <span class="param__desc">Industrias a incluir</span>
-          <div class="param--enums">
-            
-          </div>
-        
-      </li>
-    
-  
-  </ul>
-</details>
-
-<strong style="display: block; margin-top: 15px;">Respuestas</strong>
-
-<details class="card" style="margin-bottom: 5px">
-  <summary>201</summary>
-
-  <ul class="list--request-params">
-    
-    <li class="param__child0 ">
-      <strong class="param__name">
-        
-        body
-      </strong>
-      <small class="param__type">object</small>
-      <br />
-      
-    </li>
-    
-    <li class="param__child1 ">
-      <strong class="param__name">
-        
-        ad_link
-      </strong>
-      <small class="param__type">string</small>
-      <br />
-      <span class="param__desc">Anuncio</span>
-    </li>
-    
-    <li class="param__child1 ">
-      <strong class="param__name">
-        
-        ad_type
-      </strong>
-      <small class="param__type">string</small>
-      <br />
-      <span class="param__desc">Tipo de publicidad (nombre)</span>
-    </li>
-    
-    <li class="param__child1 ">
-      <strong class="param__name">
-        
-        ad_type_id
-      </strong>
-      <small class="param__type">integer</small>
-      <br />
-      <span class="param__desc">Tipo de publicidad</span>
-    </li>
-    
-    <li class="param__child1 ">
-      <strong class="param__name">
-        
-        brand
-      </strong>
-      <small class="param__type">string</small>
-      <br />
-      <span class="param__desc">Nombre de un avisador o marca</span>
-    </li>
-    
-    <li class="param__child1 ">
-      <strong class="param__name">
-        
-        campaign_id
-      </strong>
-      <small class="param__type">integer</small>
-      <br />
-      <span class="param__desc">Identificador de campaña</span>
-    </li>
-    
-    <li class="param__child1 ">
-      <strong class="param__name">
-        
-        campaign_landing_page
-      </strong>
-      <small class="param__type">string</small>
-      <br />
-      <span class="param__desc">Link de campaña</span>
-    </li>
-    
-    <li class="param__child1 ">
-      <strong class="param__name">
-        
-        campaign_name
-      </strong>
-      <small class="param__type">string</small>
-      <br />
-      <span class="param__desc">Nombre de campaña</span>
-    </li>
-    
-    <li class="param__child1 ">
-      <strong class="param__name">
-        
-        country
-      </strong>
-      <small class="param__type">string</small>
-      <br />
-      <span class="param__desc">País (nombre)</span>
-    </li>
-    
-    <li class="param__child1 ">
-      <strong class="param__name">
-        
-        country_id
-      </strong>
-      <small class="param__type">integer</small>
-      <br />
-      <span class="param__desc">País (ID)</span>
-    </li>
-    
-    <li class="param__child1 ">
-      <strong class="param__name">
-        
-        date
-      </strong>
-      <small class="param__type">string</small>
-      <br />
-      <span class="param__desc">Fecha</span>
-    </li>
-    
-    <li class="param__child1 ">
-      <strong class="param__name">
-        
-        device
-      </strong>
-      <small class="param__type">string</small>
-      <br />
-      <span class="param__desc">Tipo de dispositivo</span>
-    </li>
-    
-    <li class="param__child1 ">
-      <strong class="param__name">
-        
-        industry
-      </strong>
-      <small class="param__type">string</small>
-      <br />
-      <span class="param__desc">Industria (nombre)</span>
-    </li>
-    
-    <li class="param__child1 ">
-      <strong class="param__name">
-        
-        industry_id
-      </strong>
-      <small class="param__type">integer</small>
-      <br />
-      <span class="param__desc">Industria (ID)</span>
-    </li>
-    
-    <li class="param__child1 ">
-      <strong class="param__name">
-        
-        metrics_impressions
-      </strong>
-      <small class="param__type">integer</small>
-      <br />
-      <span class="param__desc">Total de impresiones</span>
-    </li>
-    
-    <li class="param__child1 ">
-      <strong class="param__name">
-        
-        metrics_valuation
-      </strong>
-      <small class="param__type">integer</small>
-      <br />
-      <span class="param__desc">Valorización en pesos chilenos</span>
-    </li>
-    
-    <li class="param__child1 ">
-      <strong class="param__name">
-        
-        metrics_valuation_usd
-      </strong>
-      <small class="param__type">integer</small>
-      <br />
-      <span class="param__desc">Valorización en dólares</span>
-    </li>
-    
-    <li class="param__child1 ">
-      <strong class="param__name">
-        
-        screenshot_link
-      </strong>
-      <small class="param__type">string</small>
-      <br />
-      <span class="param__desc">Pantallazo de captura</span>
-    </li>
-    
-    <li class="param__child1 ">
-      <strong class="param__name">
-        
-        website
-      </strong>
-      <small class="param__type">string</small>
-      <br />
-      <span class="param__desc">Nombre de medio o soporte</span>
-    </li>
-    
-    <li class="param__child1 ">
-      <strong class="param__name">
-        
-        website_id
-      </strong>
-      <small class="param__type">integer</small>
-      <br />
-      <span class="param__desc">Identificador de medio o soporte</span>
     </li>
     
   </ul>
