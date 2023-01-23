@@ -66,7 +66,7 @@ $headers = array(
     'content-type' => 'application/json;charset=UTF-8'
 );
 $data = '{"order_by":"valuation","ad_types":{"include":[{"id":1},{"id":2},{"id":3}]},"countries":{"include":[{"id":3}]},"devices":{"include":[{"id":1},{"id":2}]},"date_range":{"start":"2021-01-07T00:00:00.000","end":"2021-01-09T00:00:59.999","group_by":"day"},"websites":{"our_sites":[{"id":144,"domain":"facebook.com"}],"include":[{"id":147,"domain":"youtube.com","last_seen":"2021-01-13T17:56:36Z"}]}}';
-$response = Requests::post('http://clientela.admetricks.com/newdeals-report/', $headers, $data);
+$response = Requests::post('https://clientela.admetricks.com/newdeals-report/', $headers, $data);
 ```
 
 > Ejemplo de respuesta exitosa

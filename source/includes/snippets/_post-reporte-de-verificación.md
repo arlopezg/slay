@@ -70,7 +70,7 @@ $response = Requests::post('https://clientela.admetricks.com/verification-report
 > Ejemplo de respuesta exitosa
 
 ```json
-{{
+{
   "data": {
     "countries": [
       {

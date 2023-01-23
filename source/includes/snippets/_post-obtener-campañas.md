@@ -84,6 +84,11 @@ $response = Requests::post('https://clientela.admetricks.com/campaigns/', $heade
 
 ```json
 {
+  "api_hits":{
+    "consumed": 1,
+    "percentage_consumed": "0.0%",
+    "available": 99999
+  },
   "meta": {},
   "data": [
     {
