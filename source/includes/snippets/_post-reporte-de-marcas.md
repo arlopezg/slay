@@ -54,625 +54,549 @@ $response = Requests::post('https://clientela.admetricks.com/brands-report/', $h
 
 ```json
 {
-  "meta": {
-    "date_range": {
-      "start": "2020-12-29T00:25:40.000Z",
-      "end": "2020-12-29T00:37:48.000Z"
-    }
-  },
   "data": {
-    "industries": [
+    "countries": [
       {
+        "id": 1,
+        "name": "chile",
         "metrics": {
-          "impact": 3835,
-          "count": 2,
-          "valuation_usd": 37.01591817924452,
+          "impact": 60,
+          "impressions": 786,
+          "valuation": 1803.9138,
+          "valuation_usd": 2.2126,
           "valuation_by_country": [
             {
-              "chile": 26269
+              "chile": 1803.9137789628
             }
-          ],
-          "impressions": 19622,
-          "valuation": 26269
-        },
-        "id": 221,
-        "name": "energía - energía domestica"
-      }
-    ],
-    "websites_by_date": [
-      {
-        "domain": "lacuarta.com",
-        "metrics_by_date": [
-          {
-            "date": "2020-12-29T00:00:00.000Z",
-            "metrics": {
-              "impact": 3798,
-              "count": 1,
-              "valuation_usd": 36.25358951294694,
-              "valuation_by_country": [
-                {
-                  "chile": 25728
-                }
-              ],
-              "impressions": 19434,
-              "valuation": 25728
-            },
-            "date_int": 1609200000000
-          }
-        ],
-        "id": 335
-      },
-      {
-        "domain": "elnortero.cl",
-        "metrics_by_date": [
-          {
-            "date": "2020-12-29T00:00:00.000Z",
-            "metrics": {
-              "impact": 37,
-              "count": 1,
-              "valuation_usd": 0.762328666297586,
-              "valuation_by_country": [
-                {
-                  "chile": 541
-                }
-              ],
-              "impressions": 188,
-              "valuation": 541
-            },
-            "date_int": 1609200000000
-          }
-        ],
-        "id": 481
+          ]
+        }
       }
     ],
     "ad_types": [
       {
-        "metrics": {
-          "impact": 3835,
-          "count": 2,
-          "valuation_usd": 37.01591817924452,
-          "valuation_by_country": [
-            {
-              "chile": 26269
-            }
-          ],
-          "impressions": 19622,
-          "valuation": 26269
-        },
         "id": 1,
-        "name": "display"
-      }
-    ],
-    "countries": [
-      {
+        "name": "display",
         "metrics": {
-          "impact": 3835,
-          "count": 2,
-          "valuation_usd": 37.01591817924452,
+          "impact": 60,
+          "impressions": 786,
+          "valuation": 1803.9138,
+          "valuation_usd": 2.2126,
           "valuation_by_country": [
             {
-              "chile": 26269
+              "chile": 1803.9137789628
             }
-          ],
-          "impressions": 19622,
-          "valuation": 26269
-        },
-        "id": 1,
-        "name": "chile"
-      }
-    ],
-    "date_range": {
-      "start": "2020-12-29T00:25:40.000Z",
-      "end": "2020-12-29T00:37:48.000Z"
-    },
-    "sold_by": [
-      {
-        "metrics": {
-          "impact": 3798,
-          "count": 1,
-          "valuation_usd": 36.25358951294694,
-          "valuation_by_country": [
-            {
-              "chile": 25728
-            }
-          ],
-          "impressions": 19434,
-          "valuation": 25728
-        },
-        "id": "direct",
-        "name": "direct"
-      },
-      {
-        "metrics": {
-          "impact": 37,
-          "count": 1,
-          "valuation_usd": 0.762328666297586,
-          "valuation_by_country": [
-            {
-              "chile": 541
-            }
-          ],
-          "impressions": 188,
-          "valuation": 541
-        },
-        "id": "unknown",
-        "name": "unknown"
+          ]
+        }
       }
     ],
     "devices": [
       {
+        "id": 1,
+        "name": "desktop",
         "metrics": {
-          "impact": 3835,
-          "count": 2,
-          "valuation_usd": 37.01591817924452,
+          "impact": 60,
+          "impressions": 786,
+          "valuation": 1803.9138,
+          "valuation_usd": 2.2126,
           "valuation_by_country": [
             {
-              "chile": 26269
+              "chile": 1803.9137789628
             }
-          ],
-          "impressions": 19622,
-          "valuation": 26269
-        },
-        "id": 2,
-        "name": "mobile"
+          ]
+        }
       }
     ],
-    "summary": {
-      "metrics_by_date": [
-        {
-          "date": "2020-12-29T00:00:00.000Z",
-          "metrics": {
-            "impact": 3835,
-            "valuation_usd": 37.01591817924452,
-            "impressions": 19622,
-            "valuation": 26269
-          },
-          "date_int": 1609200000000
+    "brands": [
+      {
+        "id": 8968,
+        "name": "enel",
+        "metrics": {
+          "impact": 60,
+          "impressions": 786,
+          "valuation": 1803.9138,
+          "valuation_usd": 2.2126,
+          "valuation_by_country": [
+            {
+              "chile": 1803.9137789628
+            }
+          ]
         }
-      ],
-      "ad_types": [
-        {
-          "metrics": {
-            "impact": 3835,
-            "valuation_usd": 37.01591817924452,
-            "impressions": 19622,
-            "valuation": 26269
-          },
-          "id": 1,
-          "name": "display"
+      }
+    ],
+    "sold_by": [
+      {
+        "id": "direct",
+        "name": "direct",
+        "metrics": {
+          "impact": 60,
+          "impressions": 786,
+          "valuation": 1803.9138,
+          "valuation_usd": 2.2126,
+          "valuation_by_country": [
+            {
+              "chile": 1803.9137789628
+            }
+          ]
         }
-      ],
-      "countries": [
-        {
-          "metrics": {
-            "impact": 3835,
-            "valuation_usd": 37.01591817924452,
-            "impressions": 19622,
-            "valuation": 26269
-          },
-          "id": 1,
-          "name": "chile"
+      }
+    ],
+    "industries": [
+      {
+        "id": 221,
+        "name": "energía - energía domestica",
+        "metrics": {
+          "impact": 60,
+          "impressions": 786,
+          "valuation": 1803.9138,
+          "valuation_usd": 2.2126,
+          "valuation_by_country": [
+            {
+              "chile": 1803.9137789628
+            }
+          ]
         }
-      ],
-      "total_impressions": 19622,
-      "total_impact": 3835,
-      "devices": [
-        {
-          "metrics": {
-            "impact": 3835,
-            "valuation_usd": 37.01591817924452,
-            "impressions": 19622,
-            "valuation": 26269
-          },
-          "id": 2,
-          "name": "mobile"
+      }
+    ],
+    "website_categories": [
+      {
+        "id": "Arts and Entertainment > Music and Audio",
+        "name": "Arts and Entertainment > Music and Audio",
+        "metrics": {
+          "impact": 60,
+          "impressions": 786,
+          "valuation": 1803.9138,
+          "valuation_usd": 2.2126,
+          "valuation_by_country": [
+            {
+              "chile": 1803.9137789628
+            }
+          ]
         }
-      ],
-      "total_valuation_usd": 37.01591817924452,
-      "position": {
-        "first_scroll": 0,
-        "second_scroll": 0,
-        "third_or_more_scroll": 1
-      },
-      "total_valuation": 26269
-    },
+      }
+    ],
     "campaigns": [
       {
-        "landing_page": "enel.cl/es/conoce-enel/prensa/news/d202011-hito-historico-para-enel-lider-del-dow-jones-sustainability-world-index-de-2020.html",
-        "description": "feliz | fotografía | mañana | mundo | paisaje | pie foto | prenda pieza | ropa formal | vestido | viento",
-        "title": "Hito histórico para Enel: líder del Dow Jones Sustainability World Index de 2020",
-        "date_range": {
-          "start": "2020-12-29T00:25:40.000Z",
-          "end": "2020-12-29T00:37:48.000Z"
+        "id": 8247985,
+        "title": "La energía que nos rodea: los nuevos usos en la vida cotidiana - 10.154.61.212",
+        "landing_page": "enel.cl/es/conoce-enel/la-energia-de-chile-se-transforma/la-energia-que-nos-rodea-los-nuevos-usos-en-la-vida-cotidiana.html",
+        "description": "azul eléctrico | circulo | gráficos | logo | magenta | marca | patrón | propiedad material | rectángulo",
+        "metrics": {
+          "count": 12,
+          "impact": 60,
+          "impressions": 786,
+          "valuation": 1803.9138,
+          "valuation_usd": 2.2126,
+          "valuation_by_country": [
+            {
+              "chile": 1803.9137789628
+            }
+          ]
         },
-        "industry": {
-          "id": 221,
-          "name": "energía - energía domestica"
+        "date_range": {
+          "start": "2022-12-29T01:51:54.000Z",
+          "end": "2022-12-29T01:57:22.000Z"
+        },
+        "preview": {
+          "ad_file": {
+            "name": "https://ads.admetricks.com/banner_104a1e9ba7fdc80596d0f24744684d60.jpg"
+          },
+          "ad_measurements": {
+            "height": 250,
+            "width": 300
+          }
         },
         "brand": {
           "id": 8968,
           "name": "enel"
         },
+        "industry": {
+          "id": 221,
+          "name": "energía - energía domestica"
+        },
         "countries": [
           {
+            "id": 1,
+            "name": "chile",
             "metrics": {
-              "impact": 3835,
-              "count": 2,
-              "valuation_usd": 37.01591817924452,
+              "impact": 60,
+              "impressions": 786,
+              "valuation": 1803.9138,
+              "valuation_usd": 2.2126,
               "valuation_by_country": [
                 {
-                  "chile": 26269
+                  "chile": 1803.9137789628
                 }
-              ],
-              "impressions": 19622,
-              "valuation": 26269
-            },
+              ]
+            }
+          }
+        ],
+        "ad_types": [
+          {
             "id": 1,
-            "name": "chile"
+            "name": "display",
+            "metrics": {
+              "impact": 60,
+              "impressions": 786,
+              "valuation": 1803.9138,
+              "valuation_usd": 2.2126,
+              "valuation_by_country": [
+                {
+                  "chile": 1803.9137789628
+                }
+              ]
+            }
           }
         ],
         "devices": [
           {
+            "id": 1,
+            "name": "desktop",
             "metrics": {
-              "impact": 3835,
-              "count": 2,
-              "valuation_usd": 37.01591817924452,
+              "impact": 60,
+              "impressions": 786,
+              "valuation": 1803.9138,
+              "valuation_usd": 2.2126,
               "valuation_by_country": [
                 {
-                  "chile": 26269
+                  "chile": 1803.9137789628
                 }
-              ],
-              "impressions": 19622,
-              "valuation": 26269
-            },
-            "id": 2,
-            "name": "mobile"
-          }
-        ],
-        "metrics": {
-          "impact": 3835,
-          "count": 2,
-          "valuation_usd": 37.01591817924452,
-          "valuation_by_country": [
-            {
-              "chile": 26269
+              ]
             }
-          ],
-          "impressions": 19622,
-          "valuation": 26269
-        },
-        "websites": [
-          {
-            "metrics": {
-              "impact": 3798,
-              "count": 1,
-              "valuation_usd": 36.25358951294694,
-              "valuation_by_country": [
-                {
-                  "chile": 25728
-                }
-              ],
-              "impressions": 19434,
-              "valuation": 25728
-            },
-            "domain": "lacuarta.com",
-            "id": 335
-          },
-          {
-            "metrics": {
-              "impact": 37,
-              "count": 1,
-              "valuation_usd": 0.762328666297586,
-              "valuation_by_country": [
-                {
-                  "chile": 541
-                }
-              ],
-              "impressions": 188,
-              "valuation": 541
-            },
-            "domain": "elnortero.cl",
-            "id": 481
           }
         ],
         "sold_by": [
           {
-            "metrics": {
-              "impact": 3798,
-              "count": 1,
-              "valuation_usd": 36.25358951294694,
-              "valuation_by_country": [
-                {
-                  "chile": 25728
-                }
-              ],
-              "impressions": 19434,
-              "valuation": 25728
-            },
             "id": "direct",
-            "name": "direct"
-          },
-          {
+            "name": "direct",
             "metrics": {
-              "impact": 37,
-              "count": 1,
-              "valuation_usd": 0.762328666297586,
+              "impact": 60,
+              "impressions": 786,
+              "valuation": 1803.9138,
+              "valuation_usd": 2.2126,
               "valuation_by_country": [
                 {
-                  "chile": 541
+                  "chile": 1803.9137789628
                 }
-              ],
-              "impressions": 188,
-              "valuation": 541
-            },
-            "id": "unknown",
-            "name": "unknown"
+              ]
+            }
           }
         ],
-        "preview": {
-          "ad_measurements": {
-            "width": 300,
-            "height": 250
-          },
-          "ad_file": {
-            "name": "https://ads.admetricks.com/banner_c4420d89bb6b5b5a1d348488ace3f8f0.jpg"
-          }
-        },
-        "id": 7852217,
-        "ad_types": [
+        "websites": [
           {
+            "id": 475,
+            "domain": "duna.cl",
             "metrics": {
-              "impact": 3835,
-              "count": 2,
-              "valuation_usd": 37.01591817924452,
+              "impact": 60,
+              "impressions": 786,
+              "valuation": 1803.9138,
+              "valuation_usd": 2.2126,
               "valuation_by_country": [
                 {
-                  "chile": 26269
+                  "chile": 1803.9137789628
                 }
-              ],
-              "impressions": 19622,
-              "valuation": 26269
-            },
-            "id": 1,
-            "name": "display"
+              ]
+            }
           }
         ]
       }
     ],
     "campaigns_with_websites_by_date": [
       {
-        "landing_page": "7852217",
+        "id": 8247985,
+        "title": "La energía que nos rodea: los nuevos usos en la vida cotidiana - 10.154.61.212",
+        "landing_page": "8247985",
         "description": null,
-        "title": "Hito histórico para Enel: líder del Dow Jones Sustainability World Index de 2020",
+        "metrics": {
+          "count": 12,
+          "impact": 60,
+          "impressions": 786,
+          "valuation": 1803.9138,
+          "valuation_usd": 2.2126,
+          "valuation_by_country": [
+            {
+              "chile": 1803.9137789628
+            }
+          ]
+        },
         "brand": {
           "id": 8968,
           "name": "enel"
         },
-        "metrics": {
-          "impact": 3835,
-          "count": 2,
-          "valuation_usd": 37.01591817924452,
-          "valuation_by_country": [
-            {
-              "chile": 26269
-            }
-          ],
-          "impressions": 19622,
-          "valuation": 26269
-        },
         "websites_by_date": [
           {
-            "domain": "lacuarta.com",
+            "id": 475,
+            "domain": "duna.cl",
             "metrics_by_date": [
               {
-                "date": "2020-12-29T00:00:00.000Z",
+                "date": "2022-12-29T00:00:00.000Z",
+                "date_int": 1672272000000,
                 "metrics": {
-                  "impact": 3798,
-                  "count": 1,
-                  "valuation_usd": 36.25358951294694,
+                  "count": 12,
+                  "impact": 60,
+                  "impressions": 786,
+                  "valuation": 1803.9138,
+                  "valuation_usd": 2.2126,
                   "valuation_by_country": [
                     {
-                      "chile": 25728
+                      "chile": 1803.9137789628
                     }
-                  ],
-                  "impressions": 19434,
-                  "valuation": 25728
-                },
-                "date_int": 1609200000000
-              }
-            ],
-            "id": 335
-          },
-          {
-            "domain": "elnortero.cl",
-            "metrics_by_date": [
-              {
-                "date": "2020-12-29T00:00:00.000Z",
-                "metrics": {
-                  "impact": 37,
-                  "count": 1,
-                  "valuation_usd": 0.762328666297586,
-                  "valuation_by_country": [
-                    {
-                      "chile": 541
-                    }
-                  ],
-                  "impressions": 188,
-                  "valuation": 541
-                },
-                "date_int": 1609200000000
-              }
-            ],
-            "id": 481
-          }
-        ],
-        "id": 7852217
-      }
-    ],
-    "campaigns_by_date": [
-      {
-        "metrics_by_date": [
-          {
-            "date": "2020-12-29T00:00:00.000Z",
-            "metrics": {
-              "impact": 3835,
-              "count": 2,
-              "valuation_usd": 37.01591817924452,
-              "valuation_by_country": [
-                {
-                  "chile": 26269
+                  ]
                 }
-              ],
-              "impressions": 19622,
-              "valuation": 26269
-            },
-            "date_int": 1609200000000
+              }
+            ],
+            "days_with_impressions": 1,
+            "devices": [
+              {
+                "id": "desktop",
+                "name": "desktop",
+                "metrics": {
+                  "impact": 60,
+                  "impressions": 786,
+                  "valuation": 1803.9138,
+                  "valuation_usd": 2.2126,
+                  "valuation_by_country": [
+                    {
+                      "chile": 1803.9137789628
+                    }
+                  ]
+                }
+              }
+            ]
           }
-        ],
-        "id": 7852217,
-        "name": "Hito histórico para Enel: líder del Dow Jones Sustainability World Index de 2020"
+        ]
       }
     ],
     "websites": [
       {
+        "id": 475,
+        "domain": "duna.cl",
+        "category": "Arts and Entertainment > Music and Audio",
         "metrics": {
-          "impact": 3798,
-          "count": 1,
-          "valuation_usd": 36.25358951294694,
+          "count": 12,
+          "impact": 60,
+          "impressions": 786,
+          "valuation": 1803.9138,
+          "valuation_usd": 2.2126,
           "valuation_by_country": [
             {
-              "chile": 25728
+              "chile": 1803.9137789628
             }
-          ],
-          "impressions": 19434,
-          "valuation": 25728
-        },
-        "domain": "lacuarta.com",
-        "id": 335
-      },
-      {
-        "metrics": {
-          "impact": 37,
-          "count": 1,
-          "valuation_usd": 0.762328666297586,
-          "valuation_by_country": [
-            {
-              "chile": 541
-            }
-          ],
-          "impressions": 188,
-          "valuation": 541
-        },
-        "domain": "elnortero.cl",
-        "id": 481
+          ]
+        }
       }
     ],
     "brands_by_date": [
       {
+        "id": 8968,
+        "name": "enel",
         "metrics_by_date": [
           {
-            "date": "2020-12-29T00:00:00.000Z",
+            "date": "2022-12-29T00:00:00.000Z",
+            "date_int": 1672272000000,
             "metrics": {
-              "impact": 3835,
-              "count": 2,
-              "valuation_usd": 37.01591817924452,
+              "count": 12,
+              "impact": 60,
+              "impressions": 786,
+              "valuation": 1803.9138,
+              "valuation_usd": 2.2126,
               "valuation_by_country": [
                 {
-                  "chile": 26269
+                  "chile": 1803.9137789628
                 }
-              ],
-              "impressions": 19622,
-              "valuation": 26269
-            },
-            "date_int": 1609200000000
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "websites_by_date": [
+      {
+        "id": 475,
+        "domain": "duna.cl",
+        "metrics_by_date": [
+          {
+            "date": "2022-12-29T00:00:00.000Z",
+            "date_int": 1672272000000,
+            "metrics": {
+              "count": 12,
+              "impact": 60,
+              "impressions": 786,
+              "valuation": 1803.9138,
+              "valuation_usd": 2.2126,
+              "valuation_by_country": [
+                {
+                  "chile": 1803.9137789628
+                }
+              ]
+            }
           }
         ],
-        "id": 8968,
-        "name": "enel"
+        "days_with_impressions": 1
       }
     ],
-    "brands": [
-      {
-        "metrics": {
-          "impact": 3835,
-          "count": 2,
-          "valuation_usd": 37.01591817924452,
-          "valuation_by_country": [
-            {
-              "chile": 26269
-            }
-          ],
-          "impressions": 19622,
-          "valuation": 26269
-        },
-        "id": 8968,
-        "name": "enel"
-      }
-    ],
+    "date_range": {
+      "start": "2022-12-29T01:51:54.000Z",
+      "end": "2022-12-29T01:57:22.000Z"
+    },
     "brands_with_websites_by_date": [
       {
+        "id": 8968,
         "metrics": {
-          "impact": 3835,
-          "count": 2,
-          "valuation_usd": 37.01591817924452,
+          "count": 12,
+          "impact": 60,
+          "impressions": 786,
+          "valuation": 1803.9138,
+          "valuation_usd": 2.2126,
           "valuation_by_country": [
             {
-              "chile": 26269
+              "chile": 1803.9137789628
             }
-          ],
-          "impressions": 19622,
-          "valuation": 26269
+          ]
         },
+        "name": "enel",
         "websites_by_date": [
           {
-            "domain": "lacuarta.com",
+            "id": 475,
+            "domain": "duna.cl",
             "metrics_by_date": [
               {
-                "date": "2020-12-29T00:00:00.000Z",
+                "date": "2022-12-29T00:00:00.000Z",
+                "date_int": 1672272000000,
                 "metrics": {
-                  "impact": 3798,
-                  "count": 1,
-                  "valuation_usd": 36.25358951294694,
+                  "count": 12,
+                  "impact": 60,
+                  "impressions": 786,
+                  "valuation": 1803.9138,
+                  "valuation_usd": 2.2126,
                   "valuation_by_country": [
                     {
-                      "chile": 25728
+                      "chile": 1803.9137789628
                     }
-                  ],
-                  "impressions": 19434,
-                  "valuation": 25728
-                },
-                "date_int": 1609200000000
+                  ]
+                }
               }
             ],
-            "id": 335
-          },
-          {
-            "domain": "elnortero.cl",
-            "metrics_by_date": [
+            "days_with_impressions": 1,
+            "devices": [
               {
-                "date": "2020-12-29T00:00:00.000Z",
+                "id": "desktop",
+                "name": "desktop",
                 "metrics": {
-                  "impact": 37,
-                  "count": 1,
-                  "valuation_usd": 0.762328666297586,
+                  "impact": 60,
+                  "impressions": 786,
+                  "valuation": 1803.9138,
+                  "valuation_usd": 2.2126,
                   "valuation_by_country": [
                     {
-                      "chile": 541
+                      "chile": 1803.9137789628
                     }
-                  ],
-                  "impressions": 188,
-                  "valuation": 541
-                },
-                "date_int": 1609200000000
+                  ]
+                }
               }
-            ],
-            "id": 481
+            ]
           }
-        ],
-        "id": 8968,
-        "name": "enel"
+        ]
       }
-    ]
+    ],
+    "campaigns_by_date": [
+      {
+        "id": 8247985,
+        "name": "La energía que nos rodea: los nuevos usos en la vida cotidiana - 10.154.61.212",
+        "metrics_by_date": [
+          {
+            "date": "2022-12-29T00:00:00.000Z",
+            "date_int": 1672272000000,
+            "metrics": {
+              "count": 12,
+              "impact": 60,
+              "impressions": 786,
+              "valuation": 1803.9138,
+              "valuation_usd": 2.2126,
+              "valuation_by_country": [
+                {
+                  "chile": 1803.9137789628
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "summary": {
+      "countries": [
+        {
+          "id": 1,
+          "name": "chile",
+          "metrics": {
+            "impact": 60,
+            "impressions": 786,
+            "valuation": 1803.9138,
+            "valuation_usd": 2.2126
+          }
+        }
+      ],
+      "ad_types": [
+        {
+          "id": 1,
+          "name": "display",
+          "metrics": {
+            "impact": 60,
+            "impressions": 786,
+            "valuation": 1803.9138,
+            "valuation_usd": 2.2126
+          }
+        }
+      ],
+      "devices": [
+        {
+          "id": 1,
+          "name": "desktop",
+          "metrics": {
+            "impact": 60,
+            "impressions": 786,
+            "valuation": 1803.9138,
+            "valuation_usd": 2.2126
+          }
+        }
+      ],
+      "metrics_by_date": [
+        {
+          "date": "2022-12-29T00:00:00.000Z",
+          "date_int": 1672272000000,
+          "metrics": {
+            "impact": 60,
+            "impressions": 786,
+            "valuation": 1803.9138,
+            "valuation_usd": 2.2126,
+            "valuation_by_country": [
+              {
+                "chile": 1803.9137789628
+              }
+            ]
+          }
+        }
+      ],
+      "total_impressions": 786,
+      "total_impact": 60,
+      "total_valuation": 1803.9138,
+      "total_valuation_usd": 2.2126,
+      "position": {
+        "first_scroll": 0.0,
+        "second_scroll": 1.0,
+        "third_or_more_scroll": 0.0
+      }
+    }
+  },
+  "meta": {
+    "date_range": {
+      "start": "2022-12-29T01:51:54.000Z",
+      "end": "2022-12-29T01:57:22.000Z"
+    }
+  },
+  "api_hits": {
+    "consumed": 1,
+    "percentage_consumed": "0.0%",
+    "available": 99999
   }
 }
 ```

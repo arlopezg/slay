@@ -70,348 +70,355 @@ $response = Requests::post('https://clientela.admetricks.com/verification-report
 > Ejemplo de respuesta exitosa
 
 ```json
-{
+{{
+  "data": {
+    "countries": [
+      {
+        "id": 3,
+        "name": "argentina",
+        "metrics": {
+          "impact": 376,
+          "impressions": 1500,
+          "valuation": 68.0,
+          "valuation_usd": 0.3716,
+          "valuation_by_country": [
+            {
+              "argentina": 68.0
+            }
+          ]
+        }
+      }
+    ],
+    "ad_types": [
+      {
+        "id": 1,
+        "name": "display",
+        "metrics": {
+          "impact": 376,
+          "impressions": 1500,
+          "valuation": 68.0,
+          "valuation_usd": 0.3716,
+          "valuation_by_country": [
+            {
+              "argentina": 68.0
+            }
+          ]
+        }
+      }
+    ],
+    "devices": [
+      {
+        "id": 2,
+        "name": "mobile",
+        "metrics": {
+          "impact": 376,
+          "impressions": 1500,
+          "valuation": 68.0,
+          "valuation_usd": 0.3716,
+          "valuation_by_country": [
+            {
+              "argentina": 68.0
+            }
+          ]
+        }
+      }
+    ],
+    "sold_by": [
+      {
+        "id": "google",
+        "name": "google",
+        "metrics": {
+          "impact": 376,
+          "impressions": 1500,
+          "valuation": 68.0,
+          "valuation_usd": 0.3716,
+          "valuation_by_country": [
+            {
+              "argentina": 68.0
+            }
+          ]
+        }
+      }
+    ],
+    "campaigns_with_websites_by_date": [
+      {
+        "id": 6512196,
+        "title": "Registrarte en Facebook | Facebook",
+        "landing_page": "facebook.com/campaign/landing.php?campaign_id=1653388251",
+        "description": null,
+        "metrics": {
+          "count": 2,
+          "impact": 376,
+          "impressions": 1500,
+          "valuation": 68.0,
+          "valuation_usd": 0.3716,
+          "valuation_by_country": [
+            {
+              "argentina": 68.0
+            }
+          ]
+        },
+        "date_range": {
+          "start": "2021-01-08T06:02:16.000Z",
+          "end": "2021-01-09T07:27:22.000Z"
+        },
+        "preview": {
+          "ad_file": {
+            "name": "https://ads.admetricks.com/banner_0d040ea31b45e49f998fc6f4daa61561.jpg"
+          },
+          "ad_measurements": {
+            "height": 600,
+            "width": 160
+          }
+        },
+        "brand": {
+          "id": 156014,
+          "name": "facebook"
+        },
+        "industry": {
+          "id": 229,
+          "name": "informática y equipos de oficina - redes sociales"
+        },
+        "countries": [
+          {
+            "id": 3,
+            "name": "argentina",
+            "metrics": {
+              "impact": 376,
+              "impressions": 1500,
+              "valuation": 68.0,
+              "valuation_usd": 0.3716,
+              "valuation_by_country": [
+                {
+                  "argentina": 68.0
+                }
+              ]
+            }
+          }
+        ],
+        "ad_types": [
+          {
+            "id": 1,
+            "name": "display",
+            "metrics": {
+              "impact": 376,
+              "impressions": 1500,
+              "valuation": 68.0,
+              "valuation_usd": 0.3716,
+              "valuation_by_country": [
+                {
+                  "argentina": 68.0
+                }
+              ]
+            }
+          }
+        ],
+        "devices": [
+          {
+            "id": 2,
+            "name": "mobile",
+            "metrics": {
+              "impact": 376,
+              "impressions": 1500,
+              "valuation": 68.0,
+              "valuation_usd": 0.3716,
+              "valuation_by_country": [
+                {
+                  "argentina": 68.0
+                }
+              ]
+            }
+          }
+        ],
+        "sold_by": [
+          {
+            "id": "google",
+            "name": "google",
+            "metrics": {
+              "impact": 376,
+              "impressions": 1500,
+              "valuation": 68.0,
+              "valuation_usd": 0.3716,
+              "valuation_by_country": [
+                {
+                  "argentina": 68.0
+                }
+              ]
+            }
+          }
+        ],
+        "websites": [
+          {
+            "id": 6190,
+            "domain": "wildtangent.com",
+            "metrics": {
+              "impact": 376,
+              "impressions": 1500,
+              "valuation": 68.0,
+              "valuation_usd": 0.3716,
+              "valuation_by_country": [
+                {
+                  "argentina": 68.0
+                }
+              ]
+            }
+          }
+        ],
+        "websites_by_date": [
+          {
+            "id": 6190,
+            "domain": "wildtangent.com",
+            "metrics_by_date": [
+              {
+                "date": "2021-01-08T00:00:00.000Z",
+                "date_int": 1610064000000,
+                "metrics": {
+                  "count": 1,
+                  "impact": 188,
+                  "impressions": 750,
+                  "valuation": 32.0,
+                  "valuation_usd": 0.1749,
+                  "valuation_by_country": [
+                    {
+                      "argentina": 32.0
+                    }
+                  ]
+                }
+              },
+              {
+                "date": "2021-01-09T00:00:00.000Z",
+                "date_int": 1610150400000,
+                "metrics": {
+                  "count": 1,
+                  "impact": 188,
+                  "impressions": 750,
+                  "valuation": 36.0,
+                  "valuation_usd": 0.1967,
+                  "valuation_by_country": [
+                    {
+                      "argentina": 36.0
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "websites": [
+      {
+        "id": 6190,
+        "domain": "wildtangent.com",
+        "category": "6190",
+        "metrics": {
+          "count": 2,
+          "impact": 376,
+          "impressions": 1500,
+          "valuation": 68.0,
+          "valuation_usd": 0.3716,
+          "valuation_by_country": [
+            {
+              "argentina": 68.0
+            }
+          ]
+        }
+      }
+    ],
+    "date_range": {
+      "start": "2021-01-08T06:02:16.000Z",
+      "end": "2021-01-09T07:27:22.000Z"
+    },
+    "summary": {
+      "countries": [
+        {
+          "id": 3,
+          "name": "argentina",
+          "metrics": {
+            "impact": 376,
+            "impressions": 1500,
+            "valuation": 68.0,
+            "valuation_usd": 0.3716
+          }
+        }
+      ],
+      "ad_types": [
+        {
+          "id": 1,
+          "name": "display",
+          "metrics": {
+            "impact": 376,
+            "impressions": 1500,
+            "valuation": 68.0,
+            "valuation_usd": 0.3716
+          }
+        }
+      ],
+      "devices": [
+        {
+          "id": 2,
+          "name": "mobile",
+          "metrics": {
+            "impact": 376,
+            "impressions": 1500,
+            "valuation": 68.0,
+            "valuation_usd": 0.3716
+          }
+        }
+      ],
+      "metrics_by_date": [
+        {
+          "date": "2021-01-08T00:00:00.000Z",
+          "date_int": 1610064000000,
+          "metrics": {
+            "impact": 188,
+            "impressions": 750,
+            "valuation": 32.0,
+            "valuation_usd": 0.1749,
+            "valuation_by_country": [
+              {
+                "argentina": 32.0
+              }
+            ]
+          }
+        },
+        {
+          "date": "2021-01-09T00:00:00.000Z",
+          "date_int": 1610150400000,
+          "metrics": {
+            "impact": 188,
+            "impressions": 750,
+            "valuation": 36.0,
+            "valuation_usd": 0.1967,
+            "valuation_by_country": [
+              {
+                "argentina": 36.0
+              }
+            ]
+          }
+        }
+      ],
+      "total_impressions": 1500,
+      "total_impact": 376,
+      "total_valuation": 68.0,
+      "total_valuation_usd": 0.37160000000000004,
+      "position": {
+        "first_scroll": 1.0,
+        "second_scroll": 0.0,
+        "third_or_more_scroll": 0.0
+      }
+    }
+  },
   "meta": {
     "date_range": {
       "start": "2021-01-08T06:02:16.000Z",
       "end": "2021-01-09T07:27:22.000Z"
     }
   },
-  "data": {
-    "ad_types": [
-      {
-        "metrics": {
-          "impact": 376,
-          "count": 2,
-          "valuation_usd": 0.6979325156720455,
-          "valuation_by_country": [
-            {
-              "argentina": 60
-            }
-          ],
-          "impressions": 1500,
-          "valuation": 60
-        },
-        "id": 1,
-        "name": "display"
-      }
-    ],
-    "countries": [
-      {
-        "metrics": {
-          "impact": 376,
-          "count": 2,
-          "valuation_usd": 0.6979325156720455,
-          "valuation_by_country": [
-            {
-              "argentina": 60
-            }
-          ],
-          "impressions": 1500,
-          "valuation": 60
-        },
-        "id": 3,
-        "name": "argentina"
-      }
-    ],
-    "sold_by": [
-      {
-        "metrics": {
-          "impact": 376,
-          "count": 2,
-          "valuation_usd": 0.6979325156720455,
-          "valuation_by_country": [
-            {
-              "argentina": 60
-            }
-          ],
-          "impressions": 1500,
-          "valuation": 60
-        },
-        "id": "google",
-        "name": "google"
-      }
-    ],
-    "websites": [
-      {
-        "metrics": {
-          "impact": 376,
-          "count": 2,
-          "valuation_usd": 0.6979325156720455,
-          "valuation_by_country": [
-            {
-              "argentina": 60
-            }
-          ],
-          "impressions": 1500,
-          "valuation": 60
-        },
-        "domain": "wildtangent.com",
-        "id": 6190
-      }
-    ],
-    "summary": {
-      "metrics_by_date": [
-        {
-          "date": "2021-01-08T00:00:00.000Z",
-          "metrics": {
-            "impact": 188,
-            "valuation_usd": 0.34896625783602275,
-            "impressions": 750,
-            "valuation": 30
-          },
-          "date_int": 1610064000000
-        },
-        {
-          "date": "2021-01-09T00:00:00.000Z",
-          "metrics": {
-            "impact": 188,
-            "valuation_usd": 0.34896625783602275,
-            "impressions": 750,
-            "valuation": 30
-          },
-          "date_int": 1610150400000
-        }
-      ],
-      "ad_types": [
-        {
-          "metrics": {
-            "impact": 376,
-            "valuation_usd": 0.6979325156720455,
-            "impressions": 1500,
-            "valuation": 60
-          },
-          "id": 1,
-          "name": "display"
-        }
-      ],
-      "countries": [
-        {
-          "metrics": {
-            "impact": 376,
-            "valuation_usd": 0.6979325156720455,
-            "impressions": 1500,
-            "valuation": 60
-          },
-          "id": 3,
-          "name": "argentina"
-        }
-      ],
-      "total_impressions": 1500,
-      "total_impact": 376,
-      "devices": [
-        {
-          "metrics": {
-            "impact": 376,
-            "valuation_usd": 0.6979325156720455,
-            "impressions": 1500,
-            "valuation": 60
-          },
-          "id": 2,
-          "name": "mobile"
-        }
-      ],
-      "total_valuation_usd": 0.6979325156720455,
-      "position": {
-        "first_scroll": 1.0,
-        "second_scroll": 0.0,
-        "third_or_more_scroll": 0.0
-      },
-      "total_valuation": 60
-    },
-    "date_range": {
-      "start": "2021-01-08T06:02:16.000Z",
-      "end": "2021-01-09T07:27:22.000Z"
-    },
-    "campaigns_with_websites_by_date": [
-      {
-        "landing_page": "facebook.com/campaign/landing.php?campaign_id=1653388251",
-        "description": null,
-        "title": "Sign Up for Facebook | Facebook",
-        "date_range": {
-          "start": "2021-01-08T06:02:16.000Z",
-          "end": "2021-01-09T07:27:22.000Z"
-        },
-        "industry": {
-          "id": 229,
-          "name": "informática y equipos de oficina - redes sociales"
-        },
-        "brand": {
-          "id": 156014,
-          "name": "facebook"
-        },
-        "countries": [
-          {
-            "metrics": {
-              "impact": 376,
-              "count": 2,
-              "valuation_usd": 0.6979325156720455,
-              "valuation_by_country": [
-                {
-                  "argentina": 60
-                }
-              ],
-              "impressions": 1500,
-              "valuation": 60
-            },
-            "id": 3,
-            "name": "argentina"
-          }
-        ],
-        "devices": [
-          {
-            "metrics": {
-              "impact": 376,
-              "count": 2,
-              "valuation_usd": 0.6979325156720455,
-              "valuation_by_country": [
-                {
-                  "argentina": 60
-                }
-              ],
-              "impressions": 1500,
-              "valuation": 60
-            },
-            "id": 2,
-            "name": "mobile"
-          }
-        ],
-        "metrics": {
-          "impact": 376,
-          "count": 2,
-          "valuation_usd": 0.6979325156720455,
-          "valuation_by_country": [
-            {
-              "argentina": 60
-            }
-          ],
-          "impressions": 1500,
-          "valuation": 60
-        },
-        "websites_by_date": [
-          {
-            "domain": "wildtangent.com",
-            "metrics_by_date": [
-              {
-                "date": "2021-01-08T00:00:00.000Z",
-                "metrics": {
-                  "impact": 188,
-                  "count": 1,
-                  "valuation_usd": 0.34896625783602275,
-                  "valuation_by_country": [
-                    {
-                      "argentina": 30
-                    }
-                  ],
-                  "impressions": 750,
-                  "valuation": 30
-                },
-                "date_int": 1610064000000
-              },
-              {
-                "date": "2021-01-09T00:00:00.000Z",
-                "metrics": {
-                  "impact": 188,
-                  "count": 1,
-                  "valuation_usd": 0.34896625783602275,
-                  "valuation_by_country": [
-                    {
-                      "argentina": 30
-                    }
-                  ],
-                  "impressions": 750,
-                  "valuation": 30
-                },
-                "date_int": 1610150400000
-              }
-            ],
-            "id": 6190
-          }
-        ],
-        "websites": [
-          {
-            "metrics": {
-              "impact": 376,
-              "count": 2,
-              "valuation_usd": 0.6979325156720455,
-              "valuation_by_country": [
-                {
-                  "argentina": 60
-                }
-              ],
-              "impressions": 1500,
-              "valuation": 60
-            },
-            "domain": "wildtangent.com",
-            "id": 6190
-          }
-        ],
-        "sold_by": [
-          {
-            "metrics": {
-              "impact": 376,
-              "count": 2,
-              "valuation_usd": 0.6979325156720455,
-              "valuation_by_country": [
-                {
-                  "argentina": 60
-                }
-              ],
-              "impressions": 1500,
-              "valuation": 60
-            },
-            "id": "google",
-            "name": "google"
-          }
-        ],
-        "preview": {
-          "ad_measurements": {
-            "width": 160,
-            "height": 600
-          },
-          "ad_file": {
-            "name": "https://ads.admetricks.com/banner_0d040ea31b45e49f998fc6f4daa61561.jpg"
-          }
-        },
-        "id": 6512196,
-        "ad_types": [
-          {
-            "metrics": {
-              "impact": 376,
-              "count": 2,
-              "valuation_usd": 0.6979325156720455,
-              "valuation_by_country": [
-                {
-                  "argentina": 60
-                }
-              ],
-              "impressions": 1500,
-              "valuation": 60
-            },
-            "id": 1,
-            "name": "display"
-          }
-        ]
-      }
-    ],
-    "devices": [
-      {
-        "metrics": {
-          "impact": 376,
-          "count": 2,
-          "valuation_usd": 0.6979325156720455,
-          "valuation_by_country": [
-            {
-              "argentina": 60
-            }
-          ],
-          "impressions": 1500,
-          "valuation": 60
-        },
-        "id": 2,
-        "name": "mobile"
-      }
-    ]
+  "api_hits": {
+    "consumed": 1,
+    "percentage_consumed": "0.0%",
+    "available": 99999
   }
 }
 ```
