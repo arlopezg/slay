@@ -1,7 +1,7 @@
 > Ejemplo de petición
 
 ```shell
-curl -X POST -H "Authorization: Token YOUR_TOKEN" "https://clientela.admetricks.com/market-report/data/v5/?day=2022-10-01&country=1&device=1&ad_type=1"
+curl -X POST -H "Authorization: Token YOUR_TOKEN" "https://clientela.admetricks.com/market-report/data/v6/?day=2022-10-01&country=1&device=1&ad_type=1"
 ```
 
 ```python
